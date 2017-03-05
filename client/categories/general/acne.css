@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Bitter|Fjalla+One|PT+Sans+Narrow');
+
+/* body {
+
+	background: linear-gradient(to right, #C6B7BF ,  #E8E2E5, #E8E2E5 ,  #C6B7BF);   
+}
+*/
+
+.title {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 60px;
+}
+
+.button {
+	list-style-type: none;
+}
+
+.header {
+font-family: 'Fjalla One', sans-serif;
+}
+
+
+.section {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 125%;
+}
+
+.box {
+  	border-radius: 15px;
+  	background: #F3E5F5; 
+	padding: 20px;
+}
+
+.floating-box{
+	float: left;
+	display: inline-block;
+	width: 300px;
+    height: 360px;
+    margin: 1%;
+    border: 3px dotted #4A148C; 
+    padding: 0px 15px;
+}
