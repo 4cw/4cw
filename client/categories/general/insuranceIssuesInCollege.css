@@ -1,0 +1,11 @@
+.panel > .panel-heading {
+    background-image: none;
+    background-color: #F3E5F5;
+    border-radius: 20px;
+}
+.panel{
+  border: 0;
+  box-shadow: 0;
+  padding: 2px;
+
+}
