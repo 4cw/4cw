@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito|Pacifico');
+
+p {font-family: 'Nunito';}
+ul {font-family: 'Nunito';}
+
+/*does not display for some reason*/
+.featured--article{
+    background-image: url('../img/ribbon.png');
+/*    background-color: #cccccc;*/
+/*    background-position: center;  */
+}
+.header{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.background{
+    align-content: right;
+    
+}
+
+.jumbotron{
+    font-family: 'Pacifico';
+    color: purple;
+    background-color: white;
+    padding-bottom: 50px;
+    margin-top: -20px;
+
+  
+}
+
+.header2{
+    font-family: 'Nunito';
+}
+.home{
+    
+}
