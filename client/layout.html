@@ -22,21 +22,27 @@
 		      	<ul class="nav navbar-nav">
 							<li><a href="{{pathFor 'home'}}">Home</a></li>
 							<li><a href="{{pathFor 'legal'}}">Legal</a></li>
+							<li>
+								<div class="dropdown">
+<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Dropdown trigger
+	<span class="caret"></span>
+</button>
+{{> sidebar}}
+</div>
+							</li>
 						</ul>
 		    </div><!-- /.navbar-collapse -->
 
 		  </div><!-- /.container-fluid -->
 		</nav>
    <div class="row">
-     <div class="col-md-3">
-       {{> sidebar}}
-     </div>
-     <div class="col-md-9">
+     <div class="col-md-12">
 		<!-- Here is where the actual content of the page gets inserted by the router! -->
 		  {{> yield}}
     </div>
   </div>
-  
+
 
 	</div>
 </template>
