@@ -1,34 +1,71 @@
 <template name="generalLinks">
-	<h1>General Health</h1>
-	<ul>
-		<li>
-			Special Issues For College Women
-			<ul>
-				<li><a href="{{pathFor 'transition'}}">*Transition To College</a></li>
-				<li>*Getting A Good Night's Sleep</li>
-				<li>Body Image</li>
-				<li><a href="{{pathFor 'breastHealth'}}">*Breast Health</a></li>
-				<li>Screening and Immunization</li>
-				<li><a href="{{pathFor 'oralHealth'}}">*Oral Health</a></li>
-				<li>Bad Breath</li>
-				<li><a href="{{pathFor 'acne'}}">*Acne</a></li>
-				<li><a href="{{pathFor 'insuranceIssuesInCollege'}}">*Insurance Issues In College</a></li>
-				<li>Tanning and Sun Safety</li>
-				<li><a href="http://youngwomenshealth.org/healthy_relat.html">Establishing Healthy Relationships</a></li>
-				<li>Environmental Health</li>
-				<li>Lesbian Health Issues</li>
-			</ul>
-			<li> All the rest
+<link rel="stylesheet" href="general.css">
+	<center><h1>General Health</h1></center>
+	<br>
+<div class="panel-group" id="generalLinksBody" role="tablist" aria-multiselectable="true">
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="general_special_title" >
+			<h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#generalLinksBody" href="#general_special_body" aria-expanded="true" aria-controls="general_special_body">
+					Special Issues For College Women
+				</a>
+			</h4>
+		</div>
+		<div id="general_special_body" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="general_special_title">
+			<div class="panel-body">
 				<ul>
-					<li>Information To Build a Healthier Life</li>
-					<li>Tools to Build a Healthier Life</li>
-					<li>HealthierUS</li>
-					<li>Steps to healthier women</li>
-					<li>Small Steps For Big Heath Rewards</li>
-					<li>Nutrition</li>
+					<li><a href="{{pathFor 'transition'}}">*Transition To College</a></li>
+					<li><a href="http://www.nhlbi.nih.gov/health/health-topics/topics/sdd/why">*Getting A Good Night's Sleep</a></li>
+					<li><a href="http://www.womenshealth.gov/body-image/index.html">Body Image</a></li>
+					<li><a href="{{pathFor 'breastHealth'}}">*Breast Health</a></li>
+					<li><a href="http://www.womenshealth.gov/screening-tests-and-vaccines/index.html">Screening and Immunization</a></li>
+					<li><a href="{{pathFor 'oralHealth'}}">*Oral Health</a></li>
+					<li><a href="http://girlshealth.gov/body/grooming/breath.html">Bad Breath</a></li>
+					<li><a href="{{pathFor 'acne'}}">*Acne</a></li>
+					<li><a href="{{pathFor 'insuranceIssuesInCollege'}}">*Insurance Issues In College</a></li>
+					<li><a href="http://www.girlshealth.gov/body/grooming/tanning.html">Tanning and Sun Safety</a></li>
+					<li><a href="http://youngwomenshealth.org/healthy_relat.html">Establishing Healthy Relationships</a></li>
+					<li><a href="http://www.girlshealth.gov/environmental/index.html">Environmental Health</a></li>
+					<li><a href="http://womenshealth.gov/publications/our-publications/fact-sheet/lesbian-bisexual-health.html">Lesbian Health Issues</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="general_build_title" >
+			<h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#generalLinksBody" href="#general_build_body" aria-expanded="false" aria-controls="general_build_body">
+					Information To Build a Healthier Life
+				</a>
+			</h4>
+		</div>
+		<div id="general_build_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="general_build_title">
+			<div class="panel-body">
+				<ul>
+					<li><a hfhref="http://www.nhlbi.nih.gov/health/educational/wecan/tools-resources/nutrition.htm">Tools to Build a Healthier Life</a></li>
+					<li><a href="http://www.letsmove.gov/healthierus-school-challenge">HealthierUS</a></li>
+					<li><a href="http://www.womenshealth.gov/nwhw/by-age/">Steps to healthier women</a></li>
+					<li><a href="https://www.niddk.nih.gov/health-information/health-communication-programs/ndep/partnership-community-outreach/campaigns/small-steps-big-rewards/Pages/smallstepsbigrewards.aspx">Small Steps For Big Heath Rewards</a></li>
+				</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="general_nutrition_title" >
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#generalLinksBody" href="#general_nutrition_body" aria-expanded="false" aria-controls="general_nutrition_body">
+						Nutrition
+					</a>
+				</h4>
+			</div>
+			<div id="general_nutrition_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="general_nutrition_title">
+				<div class="panel-body">
+				<ul>
 					<li><a href="{{pathFor 'eatingHealthy'}}">*Eating Healthy</a></li>
 					<li><a href="{{pathFor 'nutrients'}}">*Nutrients You Need</a></li>
-					<li>Healthy Fruits and Vegetables</li>
+					<li><a href="http://www.fruitsandveggiesmorematters.org/cdc-resources/">Healthy Fruits and Vegetables</a></li>
 					<li>*Food Pyramid</li>
 					<li><a href="{{pathFor 'foodAllergies'}}">*Food Allergies</a></li>
 					<li><a href="{{pathFor 'vegetarianism'}}">*Vegetarianism</a></li>
@@ -36,35 +73,103 @@
 					<li><a href="http://www.caloriesperhour.com">Calculate Calorie Burning Activities</a></li>
 					<li><a href="http://www.nutrition.gov">Comprehensive Nutrition Information</a></li>
 					<li><a href="http://www.nlm.nih.gov/medlineplus/weightlossanddieting.html">Weight Loss and Dieting</a></li>
-					<li>Fitness</li>
-					<li>Physical Fitness</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="general_fitness_title" >
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#generalLinksBody" href="#general_fitness_body" aria-expanded="false" aria-controls="general_fitness_body">
+						Fitness
+					</a>
+				</h4>
+			</div>
+			<div id="general_fitness_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="general_fitness_title">
+				<div class="panel-body">
+					<ul>
+					<li><a href="http://www.fitness.gov/">Physical Fitness</a></li>
 					<li><a href="{{pathFor 'exerciseInCollege'}}">*Exercise In College</a></li>
 					<li><a href="{{pathFor 'excessiveExercise'}}">*Excessive Exercise</a></li>
 					<li><a href="http://www.cdc.gov/nccdphp/dnpa/physical/life">Fitness Tips</a></li>
 					<li><a href="{{pathFor 'fitnessGuide'}}">*Fitness Guidelines</a></li>
-					<li>Just Move</li>
+					<li><a href="http://www.letsmove.gov/">Just Move</a></li>
 					<li><a href="http://www.fitness.gov">More Fitness Information</a></li>
-					<li>Women with Disabilities</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="general_disabilities_title" >
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#generalLinksBody" href="#general_disabilities_body" aria-expanded="false" aria-controls="general_disabilities_body">
+						Women with Disabilities
+					</a>
+				</h4>
+			</div>
+			<div id="general_disabilities_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="general_disabilities_title">
+				<div class="panel-body">
+					<ul>
 					<li><a href="{{pathFor 'womenDisOverview'}}">*Overview</a></li>
 					<li><a href="{{pathFor 'womenDisLearning'}}">*Learning Disabilities</a></li>
-					<li>Special Issues</li>
-					<li>Common Infectious Diseases</li>
-					<li>The Cold</li>
+					<li><a href="http://www.ncbi.nlm.nih.gov/pubmed/17238952">Special Issues</a></li>
+				</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="general_diseases_title" >
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#generalLinksBody" href="#general_diseases_body" aria-expanded="false" aria-controls="general_diseases_body">
+						Common Infectious Diseases
+					</a>
+				</h4>
+			</div>
+			<div id="general_diseases_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="general_diseases_title">
+				<div class="panel-body">
+					<ul>
+					<li><a href="http://www.niaid.nih.gov/topics/commoncold/Pages/default.aspx">The Cold</a></li>
 					<li><a href="{{pathFor 'flu'}}">*The Flu (influenza)</a></li>
 					<li><a href="{{pathFor 'strepThroat'}}">*Strep Throat</a></li>
 					<li><a href="{{pathFor 'mononucleosis'}}">*Mononucleosis</a></li>
-					<li>Other</li>
-					<li>Sleep Disorders</li>
-					<li>Sleep Disorders - General Info</li>
-					<li><a href="http://www.ninds.nih.gov/disorders/brain_basics/understanding_sleep.htm">Brain Basics: Understanding Sleep</a></li>
-					<li>Awake at the Wheel (pdf)</li>
-					<li>Insomnia</li>
-					<li>Sleep Apnea</li>
-					<li>Restless Leg Syndrome</li>
-					<li>Narcolepsy</li>
-					<li>Other Issues</li>
+					<li><a href="http://womenshealth.gov/a-z-topics/">Other</a></li>
 				</ul>
-			</li>
-		</li>
-	</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="general_disorders_title" >
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#generalLinksBody" href="#general_disorders_body" aria-expanded="false" aria-controls="general_disorders_body">
+						Sleep Disorders
+					</a>
+				</h4>
+			</div>
+			<div id="general_disorders_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="general_disorders_title">
+				<div class="panel-body">
+					<ul>
+					<li><a href="https://medlineplus.gov/sleepdisorders.html">Sleep Disorders - General Info</a></li>
+					<li><a href="http://www.ninds.nih.gov/disorders/brain_basics/understanding_sleep.htm">Brain Basics: Understanding Sleep</a></li>
+					<li><a href="http://www.cdc.gov/features/dsdrowsydriving/">Awake at the Wheel (pdf)</a></li>
+					<li><a href="http://www.womenshealth.gov/publications/our-publications/fact-sheet/insomnia.html">Insomnia</a></li>
+					<li><a href="http://www.ninds.nih.gov/disorders/sleep_apnea/sleep_apnea.htm">Sleep Apnea</a></li>
+					<li><a href="http://www.ninds.nih.gov/disorders/restless_legs/restless_legs.htm">Restless Leg Syndrome</a></li>
+					<li><a href="http://www.ninds.nih.gov/disorders/narcolepsy/narcolepsy.htm">Narcolepsy</a></li>
+				</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="general_other_title" >
+				<h4 class="panel-title">
+					<a href="http://womenshealth.gov/a-z-topics/">Other Issues</a>
+				</h4>
+			</div>
+		</div>
+</div>
 </template>

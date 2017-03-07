@@ -1,7 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito|Pacifico|Allerta');
 
 p {font-family: 'Nunito';}
 ul {font-family: 'Nunito';}
+
+h1 {
+	font-family: 'Allerta', Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	line-height: 55px;
+}
 
 /*does not display for some reason*/
 .featured--article{
@@ -14,7 +20,7 @@ ul {font-family: 'Nunito';}
 }
 .background{
     align-content: right;
-    
+
 }
 
 .jumbotron{
@@ -24,12 +30,12 @@ ul {font-family: 'Nunito';}
     padding-bottom: 50px;
     margin-top: -20px;
 
-  
+
 }
 
 .header2{
     font-family: 'Nunito';
 }
 .home{
-    
+
 }

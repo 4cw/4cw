@@ -1,11 +1,6 @@
 @import url('http://fonts.googleapis.com/css?family=Crimson+Text');
 @import url('http://fonts.googleapis.com/css?family=Allerta');
 
-h1 {
-	font-family: 'Allerta', Helvetica, Arial, sans-serif;
-	font-size: 50px;
-	line-height: 55px;
-}
 
 .entry{
 	font-family: 'Crimson Text', Georgia, Times, serif;
