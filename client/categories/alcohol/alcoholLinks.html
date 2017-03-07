@@ -1,16 +1,18 @@
 <template name="alcoholLinks">
-
-                      <h1 style="font-size:24pt;text-align:center">
-                      Tobacco, Alcohol and Substance Abuse
-
-                     </h1>
-
-          <div id="sidebar" class="well sidebar-nav">
-            <div class="entry">
-            <h3><i class="glyphicon glyphicon-tag"></i>
-                <small><b>General Issues</b></small>
-            </h3>
-            <ul class="nav nav-pills nav-stacked">
+<link rel="stylesheet" href="general.css">
+  	<center><h1 style="font-size:30pt;text-align:center">Tobacco, Alcohol and Substance Abuse</h1></center>
+    <div class="panel-group" id="alcoholLinksBody" role="tablist" aria-multiselectable="true">
+    	<div class="panel panel-default">
+    		<div class="panel-heading" role="tab" id="alcohol_general_title" >
+    			<h4 class="panel-title">
+    				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#alcoholLinksBody" href="#alcohol_general_body" aria-expanded="true" aria-controls="alcohol_general_body">
+    					General Issues
+    				</a>
+    			</h4>
+    		</div>
+    		<div id="alcohol_general_body" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="alcohol_general_title">
+    			<div class="panel-body">
+              <ul>
                        <li><a href="http://www.drugabuse.gov/drugpages/stats.html">Trends and Statistics</a></li>
                        <li><a href="https://www.drugabuse.gov/publications/drugfacts/substance-use-in-women">Women and Substance Abuse</a></li>
                        <li><a href="http://www.drugabuse.gov/drugpages/DrugsOfAbuse.html">Commonly Abused Drugs Chart</a></li>
@@ -20,34 +22,77 @@
                        <li><a href="http://www.drugabuse.gov/drugpages/prevention.html">Prevention Research</a></li>
                        <li><a href="http://www.drugabuse.gov/drugpages/treatment.html">Treatment Research</a></li>
                      </ul>
-            <h3><i class="glyphicon glyphicon-tag"></i>
-                <small><b>Need Treatment?</b></small>
-            </h3>
-            <ul class="nav nav-pills nav-stacked">
+                   </div>
+                 </div>
+               </div>
+               <div class="panel panel-default">
+             		<div class="panel-heading" role="tab" id="alcohol_treatment_title" >
+             			<h4 class="panel-title">
+             				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#alcoholLinksBody" href="#alcohol_treatment_body" aria-expanded="false" aria-controls="alcohol_treatment_body">
+             					Need Treatment?
+             				</a>
+             			</h4>
+             		</div>
+             		<div id="alcohol_treatment_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="alcohol_treatment_title">
+             			<div class="panel-body">
+             				<ul>
                        <li><a href="https://teens.drugabuse.gov/blog/post/how-help-friend-need">Friend with a drug problem?</a></li>
                        <li><a href="http://findtreatment.samhsa.gov/">Contact your college health center or you may want to call 1-800-662-HELP</a></li>
                      </ul>
-            <h3><i class="glyphicon glyphicon-tag"></i>
-                <small><b>Tobacco</b></small>
-            </h3>
-            <ul class="nav nav-pills nav-stacked">
+                   </div>
+                 </div>
+               </div>
+
+               <div class="panel panel-default">
+             		<div class="panel-heading" role="tab" id="alcohol_Tobacco_title" >
+             			<h4 class="panel-title">
+             				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#alcoholLinksBody" href="#alcohol_Tobacco_body" aria-expanded="false" aria-controls="alcohol_Tobacco_body">
+             					Tobacco
+             				</a>
+             			</h4>
+             		</div>
+             		<div id="alcohol_Tobacco_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="alcohol_Tobacco_title">
+             			<div class="panel-body">
+             				<ul>
                        <li><a href="http://www.cdc.gov/tobacco/data_statistics/Factsheets/index.htm">CDC Fact Sheet on Tobacco</a></li>
                        <li><a href="https://www.cdc.gov/tobacco/data_statistics/sgr/50th-anniversary/pdfs/fs_women_smoking_508.pdf">Tobacco and Women</a></li>
                        <li><a href="http://www.smoking.drugabuse.gov/">Information on Nicotine Addiction</a></li>
                        <li><a href="http://www.womenshealth.gov/aging/wellness/quitting-smoking.html">How to Quit Smoking</a></li>
                      </ul>
-          <h3><i class="glyphicon glyphicon-tag"></i>
-                 <small><b>Alcohol</b></small>
-             </h3>
-             <ul class="nav nav-pills nav-stacked">
+                   </div>
+                 </div>
+               </div>
+
+                     <div class="panel panel-default">
+                   		<div class="panel-heading" role="tab" id="alcohol_Alcohol_title" >
+                   			<h4 class="panel-title">
+                   				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#alcoholLinksBody" href="#alcohol_Alcohol_body" aria-expanded="false" aria-controls="alcohol_Alcohol_body">
+                   					Alcohol
+                   				</a>
+                   			</h4>
+                   		</div>
+                   		<div id="alcohol_Alcohol_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="alcohol_Alcohol_title">
+                   			<div class="panel-body">
+                   				<ul>
                        <li><a href="http://www.collegedrinkingprevention.gov/">College Drinking</a></li>
                        <li><a href="http://www.niaaa.nih.gov">General Information</a></li>
                        <li><a href="http://www.cdc.gov/alcohol/fact-sheets/womens-health.htm">Women and Alcohol</a></li>
                      </ul>
-              <h3><i class="glyphicon glyphicon-tag"></i>
-                  <small><b>Drugs of Abuse</b></small>
-              </h3>
-              <ul class="nav nav-pills nav-stacked">
+                   </div>
+                 </div>
+               </div>
+
+                     <div class="panel panel-default">
+                   		<div class="panel-heading" role="tab" id="alcohol_Abuse_title" >
+                   			<h4 class="panel-title">
+                   				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#alcoholLinksBody" href="#alcohol_Abuse_body" aria-expanded="false" aria-controls="alcohol_Abuse_body">
+                   					Drugs of Abuse
+                   				</a>
+                   			</h4>
+                   		</div>
+                   		<div id="alcohol_Abuse_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="alcohol_Abuse_title">
+                   			<div class="panel-body">
+                   				<ul>
                        <li><a href="http://www.teens.drugabuse.gov/">NIDA for Teens: The Science Behind Drug Abuse</a></li>
                        <li><a href="{{pathFor 'caffeine'}}">*Caffeine</a></li>
                        <li><a href="http://www.drugabuse.gov/marijbroch/marijteenstxt.html">Marijuana</a></li>
@@ -55,10 +100,21 @@
                        <li><a href="https://www.drugabuse.gov/drugs-abuse/steroids-anabolic">Information on Anabolic Steriods</a></li>
                        <li><a href="{{pathFor 'mixing'}}">*Mixing Substances</a></li>
                      </ul>
-              <h3><i class="glyphicon glyphicon-tag"></i>
-                   <small><b>Other Drugs of Abuse (NIDA factsheets)</b></small>
-              </h3>
-              <ul class="nav nav-pills nav-stacked">
+                   </div>
+                 </div>
+               </div>
+
+                     <div class="panel panel-default">
+                   		<div class="panel-heading" role="tab" id="alcohol_otherAbuse_title" >
+                   			<h4 class="panel-title">
+                   				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#alcoholLinksBody" href="#alcohol_otherAbuse_body" aria-expanded="false" aria-controls="alcohol_otherAbuse_body">
+                   					Other Drugs of Abuse (NIDA factsheets)
+                   				</a>
+                   			</h4>
+                   		</div>
+                   		<div id="alcohol_otherAbuse_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="alcohol_otherAbuse_title">
+                   			<div class="panel-body">
+                   				<ul>
                        <li><a href="http://www.drugabuse.gov/drugpages/acidLSD.html">Acid/LSD</a></li>
                        <li><a href="http://www.drugabuse.gov/drugpages/cocaine.html">Cocaine</a></li>
                        <li><a href="http://www.drugabuse.gov/drugpages/clubdrugs.html">Club Drugs</a></li>
@@ -72,13 +128,17 @@
                        <li><a href="http://www.drugabuse.gov/drugpages/prescription.html">Prescription Medications</a></li>
                        <li><a href="http://www.drugabuse.gov/drugpages/steroids.html">Steroids</a></li>
                      </ul>
-              <h3><i class="glyphicon glyphicon-tag"></i>
-                  <small><b>Other Issues</b></small>
-              </h3>
-              <ul class="nav nav-pills nav-stacked">
-              <li><a href="http://womenshealth.gov/index.php">Other Issues</a></li>
-             </ul>
-           </div>
+                   </div>
+                 </div>
+               </div>
+                     <div class="panel panel-default">
+                   		<div class="panel-heading" role="tab" id="alcohol_other_title" >
+                   			<h4 class="panel-title">
+                   				<a href="http://womenshealth.gov/index.php">Other Issues
+                   				</a>
+                   			</h4>
+                   		</div>
+                      </div>
            </div>
 
 </template>
