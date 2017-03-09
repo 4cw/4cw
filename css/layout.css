@@ -11,3 +11,28 @@
     background-color: inherit;
     align-content: center;
 }
+
+#home{
+  border-bottom: 3px solid transparent;
+}
+#home:hover {
+    border-bottom: purple 3px solid;
+
+}
+#legal{
+  border-bottom: 3px solid transparent;
+}
+#legal:hover {
+    border-bottom: purple 3px solid;
+
+}
+#dLabel{
+  border-bottom: 3px solid transparent;
+}
+#dLabel:hover {
+    border-bottom: purple 3px solid;
+}
+
+.nav li:hover li a:hover {
+  background-color: #F3E5F5;
+}
