@@ -1,12 +1,17 @@
 <template name="emotionalLinks">
-                    <h1 style="font-size:24pt;text-align:center">
-                    Emotional and Mental Health
-
-                   </h1>
-
-
-     <ul>
-         <li class="cat"><b>General Issues</b>
+  <link rel="stylesheet" href="general.css">
+  <center><h1 style="font-size:30pt;text-align:center">Emotional and Mental Health</h1></center>
+<div class="panel-group" id="emotionalLinksBody" role="tablist" aria-multiselectable="true">
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="emotional_general_title" >
+			<h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#emotionalLinksBody" href="#emotional_general_body" aria-expanded="true" aria-controls="emotional_general_body">
+					General Issues
+				</a>
+			</h4>
+		</div>
+		<div id="emotional_general_body" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="emotional_general_title">
+			<div class="panel-body">
                    <ul>
                      <li class="cat"><a href="http://www.4woman.gov/faq/stress.htm">Stress</a></li>
                      <li class="cat"><a href="http://localhost:8080/fact-sheets/bodyimage.html">*Body Image</a></li>
@@ -21,49 +26,136 @@
                      <li class="cat"><a href="http://www.psych.org/public_info/disaster.cfm">When Disaster Strikes</a></li>
                      <li class="cat"><a href="{{pathFor 'mentallillness'}}">*Dealing With A Family Member With A Mental Illness</a></li>
                      <li class="cat"><a href="{{pathFor 'selfInjury'}}">*Self Injury (si)</a></li>
-                     <li class="cat"><a href="http://www.nimh.nih.gov/publicat/womensoms.cfm">Mental Disorders in Women</a></li>
+                     <li class="cat"><a href="http://www.nimh.nih.gov/health/topics/women-and-mental-health/index.shtml">Mental Disorders in Women</a></li>
                      <li class="cat"><a href="http://www.surgeongeneral.gov/library/mentalhealth/home.html">Surgeon General's Report on Mental Health</a></li>
-                     <li class="cat"><a href="http://www.mentalhealth.com/">Internet Mental Health</a></li>
-                   </ul></li>
-          <li class="cat"><b>Anxiety Disorders</b>
+                     <li class="cat"><a href="http://mentalhealth.com/home/">Internet Mental Health</a></li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+
+             	<div class="panel panel-default">
+             		<div class="panel-heading" role="tab" id="emotional_disorders_title" >
+             			<h4 class="panel-title">
+             				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#emotionalLinksBody" href="#emotional_disorders_body" aria-expanded="false" aria-controls="emotional_disorders_body">
+             					Anxiety Disorders
+             				</a>
+             			</h4>
+             		</div>
+             		<div id="emotional_disorders_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="emotional_disorders_title">
+             			<div class="panel-body">
                    <ul>
                      <li class="cat"><a href="{{pathFor 'ocd'}}">*Obsessive Compulsive Disorder (ocd)</a></li>
-                     <li class="cat"><a href="http://www.nimh.nih.gov/HealthInformation/ptsdmenu.cfm">Post Traumatic Stress Disorder (ptsd)</a></li>
-                     <li class="cat"><a href="http://www.nimh.nih.gov/HealthInformation/gadmenu.cfm">Generalized Anxiety Disorder</a></li>
-                     <li class="cat"><a href="http://www.nimh.nih.gov/healthinformation/panicmenu.cfm">Panic Disorder</a></li>
-                   </ul></li>
-<li class="cat"><b>Mood disorders</b>
+                     <li class="cat"><a href="http://www.nimh.nih.gov/health/topics/post-traumatic-stress-disorder-ptsd/index.shtml">Post Traumatic Stress Disorder (ptsd)</a></li>
+                     <li class="cat"><a href="http://www.nimh.nih.gov/health/topics/anxiety-disorders/index.shtml">Generalized Anxiety Disorder</a></li>
+                     <li class="cat"><a href="http://www.nimh.nih.gov/health/publications/panic-disorder-when-fear-overwhelms/index.shtml">Panic Disorder</a></li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+
+               <div class="panel panel-default">
+                 <div class="panel-heading" role="tab" id="emotional_mood_title" >
+                   <h4 class="panel-title">
+                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#emotionalLinksBody" href="#emotional_mood_body" aria-expanded="false" aria-controls="emotional_mood_body">
+                       Mood disorders
+                     </a>
+                   </h4>
+                 </div>
+                 <div id="emotional_mood_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="emotional_mood_title">
+                   <div class="panel-body">
                    <ul>
                      <li class="cat"><a href="{{pathFor 'depression'}}">*Depression</a></li>
                      <li class="cat"><a href="{{pathFor 'sad'}}">*Seasonal Affective Disorder (SAD)</a></li>
                      <li class="cat"><a href="http://www.nimh.nih.gov/publicat/bipolar.cfm">Bipolar disorder (manic-depressive illness)</a></li>
-                   </ul></li>
-<li class="cat"><b>Eating Disorders</b>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+
+               <div class="panel panel-default">
+                 <div class="panel-heading" role="tab" id="emotional_eating_title" >
+                   <h4 class="panel-title">
+                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#emotionalLinksBody" href="#emotional_eating_body" aria-expanded="false" aria-controls="emotional_eating_body">
+                       Eating Disorders
+                     </a>
+                   </h4>
+                 </div>
+                 <div id="emotional_eating_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="emotional_eating_title">
+                   <div class="panel-body">
                    <ul>
                      <li class="cat"><a href="{{pathFor 'anorexia'}}">*Anorexia Nervosa</a></li>
                      <li class="cat"><a href="{{pathFor 'bulimia'}}">*Bulimia Nervosa</a></li>
                      <li class="cat"><a href="{{pathFor 'bingeEating'}}">*Binge Eating</a></li>
                      <li class="cat"><a href="http://www.anred.com/defslesser.html">Other</a></li>
-                   </ul></li>
-<li class="cat"><b>Schizophrenia</b>
-                   <ul>
-                     <li class="cat"><a href="http://www.nmha.org/index.cfm?objectid=C7DF97FD-1372-4D20-C8F0FBF1C871E040">Schizophrenia: Schizoaffective Disorder</a></li>
-                     <li class="cat"><a href="http://www.nmha.org/infoctr/factsheets/51.cfm">What You Need to Know</a></li>
-                   </ul></li>
-<li class="cat"><b>Suicide</b>
-                   <ul>
-                     <li class="cat"><a href="http://www.mentalhealth.org/suicideprevention/strategy.asp">National Strategy for Suicide Prevention</a></li>
-                     <li class="cat"><a href="http://www.healthfinder.gov/search/default.asp?ct=HFDocs&so=Rank%5Bd%5D%2CDocTitle&doclang=1&page=1&q1=suicide">Other links</a></li>
-                   </ul></li>
-<li class="cat"><b>Treatment</b>
-                   <ul>
-                     <li class="cat"><a href="http://www.psych.org/public_info/psythera.cfm">Individual Psychotherapy</a></li>
-                     <li class="cat"><a href="{{pathFor 'groupPsychotherapy'}}">*Group Psychotherapy</a></li>
-                     <li class="cat"><a href="http://www.psych.org/public_info/medication.cfm">Medication</a></li>
-                     <li class="cat"><a href="http://www.msnbc.com/Onair/nbc/dateline/psych/contact.asp?cp1=1">Patient/Therapist Sexual Contact</a></li>
-                   </ul></li>
-<li class="cat"><a href="http://4woman.gov/search">Other Issues</a></li>
-     </ul>
+                   </ul>
+                 </div>
+               </div>
+             </div>
 
+               <div class="panel panel-default">
+                 <div class="panel-heading" role="tab" id="emotional_Schizophrenia_title" >
+                   <h4 class="panel-title">
+                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#emotionalLinksBody" href="#emotional_Schizophrenia_body" aria-expanded="false" aria-controls="emotional_Schizophrenia_body">
+                       Schizophrenia
+                     </a>
+                   </h4>
+                 </div>
+                 <div id="emotional_Schizophrenia_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="emotional_Schizophrenia_title">
+                   <div class="panel-body">
+                   <ul>
+                     <li class="cat"><a href="http://www.nimh.nih.gov/health/topics/schizophrenia/index.shtml">Schizophrenia: Schizoaffective Disorder</a></li>
+                     <li class="cat"><a href="http://www.nimh.nih.gov/health/topics/index.shtml">What You Need to Know</a></li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+
+               <div class="panel panel-default">
+                 <div class="panel-heading" role="tab" id="emotional_Suicide_title" >
+                   <h4 class="panel-title">
+                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#emotionalLinksBody" href="#emotional_Suicide_body" aria-expanded="false" aria-controls="emotional_Suicide_body">
+                       Suicide
+                     </a>
+                   </h4>
+                 </div>
+                 <div id="emotional_Suicide_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="emotional_Suicide_title">
+                   <div class="panel-body">
+                   <ul>
+                     <li class="cat"><a href="http://www.nimh.nih.gov/health/topics/suicide-prevention/index.shtml">National Strategy for Suicide Prevention</a></li>
+                     <li class="cat"><a href="http://www.healthfinder.gov/search/default.asp?ct=HFDocs&so=Rank%5Bd%5D%2CDocTitle&doclang=1&page=1&q1=suicide">Other links</a></li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+
+               <div class="panel panel-default">
+                 <div class="panel-heading" role="tab" id="emotional_Treatment_title" >
+                   <h4 class="panel-title">
+                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#emotionalLinksBody" href="#emotional_Treatment_body" aria-expanded="false" aria-controls="emotional_Treatment_body">
+                       Treatment
+                     </a>
+                   </h4>
+                 </div>
+                 <div id="emotional_Treatment_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="emotional_Treatment_title">
+                   <div class="panel-body">
+                   <ul>
+                     <li class="cat"><a href="http://www.nimh.nih.gov/health/topics/psychotherapies/index.shtml">Individual Psychotherapy</a></li>
+                     <li class="cat"><a href="{{pathFor 'groupPsychotherapy'}}">*Group Psychotherapy</a></li>
+                     <li class="cat"><a href="http://www.nimh.nih.gov/health/topics/mental-health-medications/index.shtml">Medication</a></li>
+                     <li class="cat"><a href="http://www.msnbc.com/Onair/nbc/dateline/psych/contact.asp?cp1=1">Patient/Therapist Sexual Contact</a></li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+
+             <div class="panel panel-default">
+               <div class="panel-heading" role="tab" id="emotional_other_title" >
+                 <h4 class="panel-title">
+                   <a href="http://womenshealth.gov/index.php">Other Issues</a>
+                 </h4>
+               </div>
+             </div>
+           </div>
 
 </template>

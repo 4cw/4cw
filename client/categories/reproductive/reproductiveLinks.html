@@ -1,50 +1,101 @@
 <template name="reproductiveLinks">
-
-                    <h1 style="font-size:24pt;text-align:center">
-                    Reproductive Health
-
-                   </h1>
-
-     <ul>
-         <li class="cat"><b>Sexual and Reproductive Health</b>
+  <link rel="stylesheet" href="general.css">
+  <center><h1 style="font-size:30pt;text-align:center">Reproductive Health</h1></center>
+<div class="panel-group" id="reproductiveLinksBody" role="tablist" aria-multiselectable="true">
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="reproductive_sexual_title" >
+			<h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#reproductiveLinksBody" href="#reproductive_sexual_body" aria-expanded="true" aria-controls="reproductive_sexual_body">
+					Sexual and Reproductive Health
+				</a>
+			</h4>
+		</div>
+		<div id="reproductive_sexual_body" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="reproductive_sexual_title">
+			<div class="panel-body">
                    <ul>
-                     <li class="cat"><a href="http://www.plannedparenthood.org/sexual-health/sexual-health-relationship/sexuality.htm">Sexuality</a></li>
+                     <li class="cat"><a href="https://www.plannedparenthood.org/learn/sexuality">Sexuality</a></li>
                      <li class="cat"><a href="http://itsyoursexlife.com">Guide to Safe and Responsible Sex</a></li>
                      <li class="cat"><a href="http://www.cdc.gov/reproductivehealth/UnintendedPregnancy/Contraception.htm">Contraception</a></li>
-                     <li class="cat"><a href="http://www.go2planb.com/ForConsumers/Index.aspx">Emergency Contraception</a></li>
-                     <li class="cat"><a href="http://www.mtv.com/onair/ffyr/protect/lifeguide/birthcontrol/index.jhtml">Birth Control Options</a></li>
+                     <li class="cat"><a href="http://www.hhs.gov/opa/reproductive-health/contraception/emergency-contraception/">Emergency Contraception</a></li>
+                     <li class="cat"><a href="http://womenshealth.gov/publications/our-publications/fact-sheet/birth-control-methods.html">Birth Control Options</a></li>
                      <li class="cat"><a href="{{pathFor 'menstruation'}}">*Menstruation</a></li>
                      <li class="cat"><a href="{{pathFor 'menstrualproducts'}}">*Menstrual Products</a></li>
-                     <li class="cat"><a href="http://4woman.gov/faq/pms.htm">Pre-menstrual Syndrome</a></li>
+                     <li class="cat"><a href="http://womenshealth.gov/publications/our-publications/fact-sheet/birth-control-methods.html">Pre-menstrual Syndrome</a></li>
                      <li class="cat"><a href="{{pathFor 'firstgyno'}}">*Your First Gynecological Exam: What To Expect</a></li>
                      <li class="cat"><a href="{{pathFor 'fibroids'}}">*Fibroids</a></li>
                      <li class="cat"><a href="{{pathFor 'endometriosis'}}">*Endometriosis</a></li>
                      <li class="cat"><a href="{{pathFor 'ovariancysts'}}">*Ovarian Cysts</a></li>
-                   </ul></li>
-<li class="cat"><b>Sexually Transmitted Infections</b>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+             <div class="panel panel-default">
+           		<div class="panel-heading" role="tab" id="reproductive_infection_title" >
+           			<h4 class="panel-title">
+           				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#reproductiveLinksBody" href="#reproductive_infection_body" aria-expanded="false" aria-controls="reproductive_infection_body">
+           					Sexually Transmitted Infections
+           				</a>
+           			</h4>
+           		</div>
+           		<div id="reproductive_infection_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="reproductive_infection_title">
+           			<div class="panel-body">
                    <ul>
                      <li class="cat"><a href="{{pathFor 'chlamydia'}}">*Chlamydia</a></li>
                      <li class="cat"><a href="{{pathFor 'yeastInfections'}}">*Yeast Infections</a></li>
                      <li class="cat"><a href="{{pathFor 'herpes'}}">*Herpes</a></li>
                      <li class="cat"><a href="{{pathFor 'hpv'}}">*Human Papilloma Virus</a></li>
                      <li class="cat"><a href="{{pathFor 'pid'}}">*Pelvic Inflammatory Disorder</a></li>
-                     <li class="cat"><a href="http://www.4woman.gov/faq/stdgonor.htm">Gonorrhea</a></li>
+                     <li class="cat"><a href="http://www.womenshealth.gov/publications/our-publications/fact-sheet/gonorrhea.html">Gonorrhea</a></li>
                      <li class="cat"><a href="{{pathFor 'hiv'}}">*HIV and AIDS: What Every College Woman Should Know</a></li>
-                     <li class="cat"><a href="http://www.kff.org/hivaids/hiv6092factsheet.cfm">Women and HIV/AIDS in the United States</a></li>
-                     <li class="cat"><a href="http://www.mtv.com/thinkmtv/features/sexual_health/iysl_guide/index2.jhtml">More info on HIV/STDs</a></li>
-                     <li class="cat"><a href="http://www.cdc.gov/hiv/topics/testing/qa.htm">Getting tested for HIV/STDs</a></li>
-                     <li class="cat"><a href="http://www.kff.org/hivaids/3345-index.cfm">Sexually Transmitted Diseases in the U.S.</a></li>
-                   </ul></li>
-<li class="cat"><b>Pregnancy Related Issues</b>
+                     <li class="cat"><a href="http://www.womenshealth.gov/hiv-aids/">Women and HIV/AIDS in the United States</a></li>
+                     <li class="cat"><a href="https://www.aids.gov/hiv-aids-basics/hiv-aids-101/what-is-hiv-aids/">More info on HIV/STDs</a></li>
+                     <li class="cat"><a href="http://www.cdc.gov/hiv/testing/">Getting tested for HIV/STDs</a></li>
+                     <li class="cat"><a href="https://www.cdc.gov/std/">Sexually Transmitted Diseases in the U.S.</a></li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+             <div class="panel panel-default">
+               <div class="panel-heading" role="tab" id="reproductive_pregnancy_title" >
+                 <h4 class="panel-title">
+                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#reproductiveLinksBody" href="#reproductive_pregnancy_body" aria-expanded="false" aria-controls="reproductive_pregnancy_body">
+                     Pregnancy Related Issues
+                   </a>
+                 </h4>
+               </div>
+               <div id="reproductive_pregnancy_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="reproductive_pregnancy_title">
+                 <div class="panel-body">
                    <ul>
-                     <li class="cat"><a href="http://www.4women.gov/pregnancy/">Pregnancy</a></li>
+                     <li class="cat"><a href="http://www.womenshealth.gov/pregnancy/index.html">Pregnancy</a></li>
                      <li class="cat"><a href="{{pathFor 'unintendedpregnancy'}}">*Unintended Pregnancy</a></li>
-                   </ul></li>
-<li class="cat"><b>Breast Health</b>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+             <div class="panel panel-default">
+               <div class="panel-heading" role="tab" id="reproductive_breast_title" >
+                 <h4 class="panel-title">
+                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#reproductiveLinksBody" href="#reproductive_breast_body" aria-expanded="false" aria-controls="reproductive_breast_body">
+                     Breast Health
+                   </a>
+                 </h4>
+               </div>
+               <div id="reproductive_breast_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="reproductive_breast_title">
+                 <div class="panel-body">
                    <ul>
                      <li class="cat"><a href="{{pathFor 'breastHealth'}}">*Breast Health</a></li>
-                   </ul></li>
-<li class="cat"><a href="http://4woman.gov/search">Other Issues</a></li>
-     </ul>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+
+             <div class="panel panel-default">
+               <div class="panel-heading" role="tab" id="reproductive_other_title" >
+                 <h4 class="panel-title">
+                   <a href="http://womenshealth.gov/index.php">Other Issues</a>
+                 </h4>
+               </div>
+             </div>
+           </div>
 
 </template>
