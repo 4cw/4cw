@@ -1,25 +1,42 @@
 <template name="diseasesLinks">
-
-                    <h1 style="font-size:24pt;text-align:center">
-                    Diseases and Conditions
-
-                   </h1>
-
-
-     <ul>
-         <li class="cat"><b>Infectious Diseases</b>
-                   <ul>
+<link rel="stylesheet" href="general.css">
+    <center><h1 style="font-size:30pt;text-align:center">Diseases and Conditions</h1></center>
+  <div class="panel-group" id="diseasesLinksBody" role="tablist" aria-multiselectable="true">
+  	<div class="panel panel-default">
+  		<div class="panel-heading" role="tab" id="diseases_infectious_title" >
+  			<h4 class="panel-title">
+  				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#diseasesLinksBody" href="#diseases_infectious_body" aria-expanded="true" aria-controls="diseases_infectious_body">
+  					Infectious Diseases
+  				</a>
+  			</h4>
+  		</div>
+      <div id="diseases_infectious_body" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="diseases_infectious_title">
+  			<div class="panel-body">
+                     <ul>
                      <li class="cat"><a href="http://www.niaid.nih.gov/factsheets/cold.htm">The Cold</a></li>
                      <li class="cat"><a href="{{pathFor 'flu'}}">*The Flu (influenza)</a></li>
                      <li class="cat"><a href="{{pathFor 'strepThroat'}}">*Strep Throat</a></li>
                      <li class="cat"><a href="{{pathFor 'mononucleosis'}}">*Mononucleosis</a></li>
                      <li class="cat"><a href="http://www.cdc.gov/ncidod/sars/faq.htm">SARS</a></li>
-                     <li class="cat"><a href="http://westnilevirus.nbii.gov">West Nile</a></li>
+                     <li class="cat"><a href="https://www.cdc.gov/westnile/">West Nile</a></li>
                      <li class="cat"><a href="http://4woman.gov/faq/hepatitis.htm">Hepatitis</a></li>
                      <li class="cat"><a href="http://www.nlm.nih.gov/medlineplus/tuberculosis.html">Tuberculosis</a></li>
-                     <li class="cat"><a href="http://4woman.gov/search">Other</a></li>
-                   </ul></li>
-<li class="cat"><b>Sexually Transmitted Infections</b>
+                     <li class="cat"><a href="http://womenshealth.gov/index.php">Other</a></li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+
+             <div class="panel panel-default">
+           		<div class="panel-heading" role="tab" id="diseases_sexually_title" >
+           			<h4 class="panel-title">
+           				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#diseasesLinksBody" href="#diseases_sexually_body" aria-expanded="false" aria-controls="diseases_sexually_body">
+           					Sexually Transmitted Infections
+           				</a>
+           			</h4>
+           		</div>
+               <div id="diseases_sexually_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="diseases_sexually_title">
+           			<div class="panel-body">
                    <ul>
                      <li class="cat"><a href="{{pathFor 'chlamydia'}}">*Chlamydia</a></li>
                      <li class="cat"><a href="{{pathFor 'yeastInfections'}}">*Yeast Infections</a></li>
@@ -28,9 +45,21 @@
                      <li class="cat"><a href="{{pathFor 'hiv'}}">*HIV and AIDS: What Every College Woman Should Know</a></li>
                      <li class="cat"><a href="{{pathFor 'pid'}}">*Pelvic Inflammatory Disorder</a></li>
                      <li class="cat"><a href="http://www.4woman.gov/faq/stdgonor.htm">Gonorrhea</a></li>
-                     <li class="cat"><a href="http://4woman.gov/search">Other</a></li>
-                   </ul></li>
-<li class="cat"><b>Chronic Illnesses</b>
+                     <li class="cat"><a href="http://womenshealth.gov/index.php">Other</a></li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+             <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="diseases_chronic_title" >
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#diseasesLinksBody" href="#diseases_chronic_body" aria-expanded="false" aria-controls="diseases_chronic_body">
+                    Chronic Illnesses
+                  </a>
+                </h4>
+              </div>
+               <div id="diseases_chronic_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="diseases_chronic_title">
+                <div class="panel-body">
                    <ul>
                      <li class="cat"><a href="{{pathFor 'diabetes'}}">*Diabetes</a></li>
                      <li class="cat"><a href="{{pathFor 'asthma'}}">*Asthma</a></li>
@@ -40,13 +69,15 @@
                      <li class="cat"><a href="http://digestive.niddk.nih.gov/ddiseases/pubs/crohns/index.htm">Crohn's</a></li>
                      <li class="cat"><a href="http://www.cancer.gov/">Cancer</a></li>
                      <li class="cat"><a href="http://www.nlm.nih.gov/medlineplus/chronicfatiguesyndrome.html">Chronic Fatigue Syndrome</a></li>
-                     <li class="cat"><a href="http://www.fda.gov/hearthealth">Heart Health</a></li>
+                     <li class="cat"><a href="http://www.fda.gov/ForConsumers/ByAudience/ForWomen/WomensHealthTopics/ucm117974.htm">Heart Health</a></li>
                      <li class="cat"><a href="http://www.nhlbi.nih.gov/health/hearttruth/">Women's Heart Education</a></li>
-                     <li class="cat"><a href="http://www.4woman.gov/ForYourHeart/">Heart Disease Prevention</a></li>
-                     <li class="cat"><a href="http://4woman.gov/search">Other</a></li>
-                   </ul></li>
-
-     </ul>
+                     <li class="cat"><a href="http://womenshealth.gov/heart-health-stroke/index.html">Heart Disease Prevention</a></li>
+                     <li class="cat"><a href="http://womenshealth.gov/index.php">Other</a></li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+           </div>
 
 
 </template>

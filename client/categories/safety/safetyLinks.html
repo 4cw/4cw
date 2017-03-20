@@ -1,51 +1,99 @@
 <template name="safetyLinks">
-
-
-                    <h1 style="font-size:24pt;text-align:center">
-                    Safety and Violence Related Issues
-
-                   </h1>
-                    <a name="top"></a>
-                    <div class="factsheetbody">
-
-     <ul>
-         <li class="cat"><b>General Safety Information</b>
-                   <ul>
+<link rel="stylesheet" href="general.css">
+    <center><h1 style="font-size:30pt;text-align:center">Safety and Violence Related Issues</h1></center>
+  <div class="panel-group" id="safetyLinksBody" role="tablist" aria-multiselectable="true">
+  	<div class="panel panel-default">
+  		<div class="panel-heading" role="tab" id="safety_general_title" >
+  			<h4 class="panel-title">
+  				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#safetyLinksBody" href="#safety_general_body" aria-expanded="true" aria-controls="safety_general_body">
+  					General Safety Information
+  				</a>
+  			</h4>
+  		</div>
+      <div id="safety_general_body" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="safety_general_title">
+  			<div class="panel-body">
+                     <ul>
                      <li class="cat"><a href="http://youngwomenshealth.org/safety_in_relat.html">Safety in Relationships</a></li>
                      <li class="cat"><a href="{{pathFor 'sexualPressures'}}">*Sexual Pressures: How To Recognize And Tools To Manage</a></li>
                      <li class="cat"><a href="http://youngwomenshealth.org/safety_on_the_streets.html">Safety on the Streets</a></li>
                      <li class="cat"><a href="http://youngwomenshealth.org/safety_on_the_net.html">Safety on the Internet</a></li>
-                     <li class="cat"><a href="http://www.cdc.gov/node.do/id/0900f3ec8016eb51">Swimming Safety</a></li>
-                     <li class="cat"><a href="http://www.cdc.gov/ncipc/duip/spotlite/teendrivers.htm">Driver Safety</a></li>
+                     <li class="cat"><a href="http://www.cdc.gov/healthywater/swimming/">Swimming Safety</a></li>
+                     <li class="cat"><a href="https://www.cdc.gov/motorvehiclesafety/">Driver Safety</a></li>
                      <li class="cat"><a href="{{pathFor 'selfdefense'}}">*Self Defense</a></li>
-                     <li class="cat"><a href="http://www.cdc.gov/ncipc/factsheets/scifacts.htm">Spinal Cord Injury</a></li>
-                   </ul></li>
-<li class="cat"><b>Workplace Safety and Health</b>
-                   <ul>
+                     <li class="cat"><a href="https://wwwn.cdc.gov/nndss/conditions/spinal-cord-injury/">Spinal Cord Injury</a></li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+             <div class="panel panel-default">
+           		<div class="panel-heading" role="tab" id="safety_workplace_title" >
+           			<h4 class="panel-title">
+           				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#safetyLinksBody" href="#safety_workplace_body" aria-expanded="false" aria-controls="safety_workplace_body">
+           					Workplace Safety and Health
+           				</a>
+           			</h4>
+           		</div>
+               <div id="safety_workplace_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="safety_workplace_title">
+           			<div class="panel-body">
+                      <ul>
                      <li class="cat"><a href="http://www.cdc.gov/niosh/adoldoc.html">Safety Tips for Working Adolescents</a></li>
-                     <li class="cat"><a href="http://www.cdc.gov/node.do?id=0900f3ec8000ebdc">Workplace Hazards</a></li>
-                     <li class="cat"><a href="http://www.cdc.gov/node.do?id=0900f3ec8000ebff">Workplace Illness, Injuries and Health Disorders</a></li>
+                     <li class="cat"><a href="https://www.cdc.gov/niosh/">Workplace Hazards</a></li>
+                     <li class="cat"><a href="http://www.cdc.gov/niosh/topics/diseases.html">Workplace Illness, Injuries and Health Disorders</a></li>
                      <li class="cat"><a href="http://www.cdc.gov/node.do?id=0900f3ec8000ebc0">Workplaces and Occupations</a></li>
-                   </ul></li>
-<li class="cat"><b>Violence Issues</b>
-                   <ul>
-                     <li class="cat"><a href="http://4woman.gov/violence/types/dating.cfm">Dating Violence</a></li>
-                     <li class="cat"><a href="http://www.cdc.gov/ncipc/factsheets/ipvfacts.htm">Intimate Partner Violence</a></li>
-                     <li class="cat"><a href="http://www.cdc.gov/ncipc/factsheets/svfacts.htm">Sexual Violence</a></li>
-                     <li class="cat"><a href="http://4woman.gov/violence/signs/">Signs of Abuse</a></li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+             <div class="panel panel-default">
+               <div class="panel-heading" role="tab" id="safety_violence_title" >
+                 <h4 class="panel-title">
+                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#safetyLinksBody" href="#safety_violence_body" aria-expanded="false" aria-controls="safety_violence_body">
+                     Violence Issues
+                   </a>
+                 </h4>
+               </div>
+               <div id="safety_violence_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="safety_violence_title">
+                 <div class="panel-body">
+                      <ul>
+                     <li class="cat"><a href="http://womenshealth.gov/violence-against-women/index.html">Dating Violence</a></li>
+                     <li class="cat"><a href="http://www.cdc.gov/violenceprevention/intimatepartnerviolence/">Intimate Partner Violence</a></li>
+                     <li class="cat"><a href="http://www.cdc.gov/violenceprevention/sexualviolence/">Sexual Violence</a></li>
+                     <li class="cat"><a href="http://www.womenshealth.gov/violence-against-women/index.html">Signs of Abuse</a></li>
                      <li class="cat"><a href="{{pathFor 'dateRape'}}">*Date Rape</a></li>
                      <li class="cat"><a href="http://www.cdc.gov/niosh/topics/violence/">Workplace (Occupational) Violence</a></li>
-                     <li class="cat"><a href="http://www.cdc.gov/node.do?id=0900f3ec8000e539">CDC Injury and Violence Prevention and Control</a></li>
+                     <li class="cat"><a href="https://www.cdc.gov/injury/">CDC Injury and Violence Prevention and Control</a></li>
                      <li class="cat"><a href="http://www.injuryprevention.org/">Injury Prevention</a></li>
-                   </ul></li>
-<li class="cat"><b>Terrorism and Disasters</b>
-                   <ul>
-                     <li class="cat"><a href="http://www.hhs.gov/disasters/">Disasters, Emergencies, and Responding to Terrorism</a></li>
-                     <li class="cat"><a href="http://www.psych.org/public_info/disaster.cfm">When Disaster Strikes</a></li>
-                     <li class="cat"><a href="http://www.hhs.gov/disasters/index.shtml#bioterrorism">Bioterrorism</a></li>
-                   </ul></li>
-<li class="cat"><a href="http://4woman.gov/search">Other</a></li>
-     </ul>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+             <div class="panel panel-default">
+               <div class="panel-heading" role="tab" id="safety_terrorism_title" >
+                 <h4 class="panel-title">
+                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#safetyLinksBody" href="#safety_terrorism_body" aria-expanded="false" aria-controls="safety_terrorism_body">
+                     Terrorism and Disasters
+                   </a>
+                 </h4>
+               </div>
+               <div id="safety_terrorism_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="safety_terrorism_title">
+                 <div class="panel-body">
+                      <ul>
+                     <li class="cat"><a href="http://www.hhs.gov/hipaa/for-professionals/special-topics/emergency-preparedness/index.html">Disasters, Emergencies, and Responding to Terrorism</a></li>
+                     <li class="cat"><a href="https://www.fema.gov/pdf/donations/when_disaster_strikes.pdf">When Disaster Strikes</a></li>
+                     <li class="cat"><a href="http://www.phe.gov/emergency/bioterrorism/pages/default.aspx">Bioterrorism</a></li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+
+                   <div class="panel panel-default">
+                     <div class="panel-heading" role="tab" id="safety_other_title" >
+                       <h4 class="panel-title">
+                         <a href="http://womenshealth.gov/index.php">Other Issues</a>
+                       </h4>
+                     </div>
+                   </div>
+
 
                     </div>
 
