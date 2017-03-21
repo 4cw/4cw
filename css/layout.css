@@ -1,7 +1,17 @@
+body {background-color:#582c83}
+#maincontent {
+  background-color: white;
+  min-height: 100vh
+}
 
 
-
-
+.pacifico {
+  font-family: pacifico;
+  color:#582c83;
+  font-size:100pt;
+  text-align:center;
+  padding-bottom:40px
+}
 
 
 #dLabel{

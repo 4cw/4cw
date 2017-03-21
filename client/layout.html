@@ -4,7 +4,9 @@
 </head>
 
 <template name="layout">
-	<div class="container">
+	<div class="container" id="maincontent">
+		<div class="pacifico"><aa href="{{pathFor 'home'}}">
+			4collegewomen</aa></div>
 
 		<!-- Here is the standard Bootstrap code for a Navigation bar taken directly from getbootstrap.com/components -->
 		<nav class="navbar navbar-default">
@@ -18,8 +20,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="{{pathFor 'home'}}">
-		      	4collegewomen</a>
+
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -41,6 +42,7 @@
 
 		  </div><!-- /.container-fluid -->
 		</nav>
+
    <div class="row">
      <div class="col-md-12">
 		<!-- Here is where the actual content of the page gets inserted by the router! -->
