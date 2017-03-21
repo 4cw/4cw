@@ -1,38 +1,42 @@
 <template name='insuranceIssuesInCollege'>
 <link rel="stylesheet" href="general.css">
-  <center><h1>Insurance Issues in College</h1></center>
+
+  <head><h1>Insurance Issues in College</h1></head>
 
 <br>
-  <div class="panel-group" id="insuranceIssuesInCollegeBody" role="tablist" aria-multiselectable="true">
 
-    <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="insurance_intro_title" >
-        <h4 class="panel-title">
-          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#insuranceIssuesInCollegeBody" href="#insurance_intro_body" aria-expanded="true" aria-controls="insurance_intro_body">
-            Introduction
-          </a>
-        </h4>
-      </div>
-      <div id="insurance_intro_body" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="insurance_intro_title">
-        <div class="panel-body">
-          <p>Despite the importance of health insurance at all stages
+
+  <div class="button">
+
+    <a class="btn btn-default" href="#insurance_intro" role="button">Introduction</a>
+    <a class="btn btn-default" href="#renters_insurance" role="button">Renters Insurance</a>
+    <a class="btn btn-default" href="#car_insurance" role="button">Car Insurance</a>
+    <a class="btn btn-default" href="#insurance_find-company" role="button">Finding An Insurance Agent Or Company</a>
+    <a class="btn btn-default" href="#insurance_resources" role="button">Resources</a>
+
+  </div>
+
+
+
+<div id='insurance_intro'>
+    <h3 class="header">Introduction</h3>
+    <div class="box">
+    <p class="section">Despite the importance of health insurance at all stages
           of life, it is often on aspect of college life that students
           do not take into consideration.</p>
-
-
-
           <p>Many states have requirements that make all college
           students have health insurance. The Massachusetts Universal
           Health Care Act, for example, requires all college students
           in three-quarter (nine credits per semester) to full-time
           enrollment to participate in a qualifying health insurance
-          program.<sup>[1]</sup>
-          Students typically have two choices when it comes to choosing
+          program.</p>
+
+          <p>Students typically have two choices when it comes to choosing
           a health insurance plan: their family plan or one through
           their college.</p>
 
           <p>Here are some things to consider when purchasing insurance
-          through your schools:<sup>[2]</sup></p>
+          through your schools:</p>
 
           <ul type="disc">
             <li>Is the plan an HMO, or can I use any health
@@ -72,22 +76,14 @@
 
          <p>Besides Health Insurance, there are other types of
           insurance that college students and recent college graduates
-          will need to consider.<sup>[3]</sup></p>
-
-        </div>
-      </div>
+          will need to consider.</p>
     </div>
+  </div>
 
-    <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="insurance_renters_title" >
-        <h4 class="panel-title">
-          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#insuranceIssuesInCollegeBody" href="#insurance_renters_body" aria-expanded="false" aria-controls="insurance_renters_body">
-            Renters Insurance
-          </a>
-        </h4>
-      </div>
-      <div id="insurance_renters_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="insurance_renters_title">
-        <div class="panel-body">
+<div id='renters_insurance'>
+    <h3 class="header">Renters Insurance</h3>
+    <div class="box">
+  
           <p>Renters insurance is a form of a homeowners policy that
           protects your belongings from problems like fire and theft.
           For instance, if your new suitemate drops your stereo or her
@@ -132,18 +128,12 @@
 
         </div>
       </div>
-    </div>
 
-    <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="insurance_car_title" >
-        <h4 class="panel-title">
-          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#insuranceIssuesInCollegeBody" href="#insurance_car_body" aria-expanded="false" aria-controls="insurance_car_body">
-            Car Insurance
-          </a>
-        </h4>
-      </div>
-      <div id="insurance_car_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="insurance_car_title">
-        <div class="panel-body">
+
+      <div id='car_insurance'>
+    <h3 class="header">Car Insurance</h3>
+    <div class="box">
+
           <p>Many college students decide to buy their first cars
           during or immediately after college. One thing many new-car
           buyers do not consider is the high cost of insurance. It is
@@ -172,18 +162,11 @@
           around.</p>
         </div>
       </div>
-    </div>
 
-    <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="insurance_find_title" >
-        <h4 class="panel-title">
-          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#insuranceIssuesInCollegeBody" href="#insurance_find_body" aria-expanded="false" aria-controls="insurance_find_body">
-            Finding An Insurance Agent Or Company
-          </a>
-        </h4>
-      </div>
-      <div id="insurance_find_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="insurance_find_title">
-        <div class="panel-body">
+  <div id='insurance_find-company'>
+    <h3 class="header">Finding An Insurance Agent Or Company</h3>
+    <div class="box">
+
           <p>Ask around. Your friends, co-workers, boss, parents, or
           relatives may have great suggestions for inexpensive but
           effective insurance plans. Almost everyone changes providers
@@ -197,37 +180,26 @@
           the legwork easier.</p>
         </div>
       </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="insurance_references_title" >
-        <h4 class="panel-title">
-          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#insuranceIssuesInCollegeBody" href="#insurance_references_body" aria-expanded="false" aria-controls="insurance_references_body">
-            References
-          </a>
-        </h4>
-      </div>
-      <div id="insurance_references_body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="insurance_references_title">
-        <div class="panel-body">
 
-          <div id='insurance_references_1'>
+<div id='insurance_resources'>
+    <h3 class="header">Resources</h3>
+    <div class="box">
+
             <p><a href="insurance.html#_ftnref1" name="_ftn1" title="">[1]</a> Adapted
               from <a href="http://www.insurancequotes.org/health/the-complete-guide-to-college-students-healthcare-reform/"> http://www.insurancequotes.org/health/the-complete-guide-to-college-students-healthcare-reform/</a></p>
-          </div>
-          <div id='insurance_references_2'>
+          
+         
             <p><a href="insurance.html#_ftnref2" name="_ftn2" title="">[2]</a> Adapted
               from <a href="http://www.insurance.com/quotes/Article.aspx/College_Student_Health_Plans/artid/41">
                 http://www.insurance.com/quotes/Article.aspx/College_Student_Health_Plans/artid/41</a></p>
-          </div>
-          <div id='insurance_references_3'>
+          
+          
             <p><a href="insurance.html#_ftnref3" name="_ftn3" title="">[3]</a> Adapted
               from <a href="http://www.iii.org/insurance-topics/other-coverages">
                 http://www.iii.org/insurance-topics/other-coverages</a></p>
+          
           </div>
-
-        </div>
-      </div>
     </div>
-  </div>
 
 
 
