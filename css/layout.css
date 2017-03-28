@@ -53,16 +53,16 @@ body {background-color:#582c83}
 }
 
 .header{
-  color:  #ffffff;
+  color:  #ffffff !important;
   font-weight: bold;
   font-size: 150%;
 }
 
 
 .container{
-  
+
   border-left: solid #E0E0E0 30px;
   border-right: solid #E0E0E0 30px;
-  
- 
+
+
 }
