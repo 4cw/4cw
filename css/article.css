@@ -1,9 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Bitter|Fjalla+One|PT+Sans+Narrow');
+
+/* body {
+
+	background: linear-gradient(to right, #C6B7BF ,  #E8E2E5, #E8E2E5 ,  #C6B7BF);
+}
+*/
+
+.h1 {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 60px;
+}
+/*
+.button {
+	list-style-type: none;
+}
+
+.header {
+font-family: 'Fjalla One', sans-serif;
+}
+
+
+.section {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 125%;
+}
+*/
+.box {
+  	border-radius: 15px;
+  	background: #F3E5F5;
+		padding: 20px;
+}
+
+.floating-box{
+	float: left;
+	display: inline-block;
+	width: 280px;
+    height: 360px;
+    margin: 1%;
+    border: 3px dotted #4A148C;
+    padding: 0px 15px;
+}
+
+/*dynamic tabs */
 .tabbable-panel {
   border: 0;
   padding: 10px;
 }
 
-/* Default mode */
 .tabbable-line > .nav-tabs {
   border: none;
   margin: 0px;
@@ -21,6 +65,7 @@
 }
 .tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
   border-bottom: 4px solid #fbcdcf;
+	margin-bottom: -5px;
 }
 .tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
   border: 0;
@@ -36,6 +81,7 @@
 .tabbable-line > .nav-tabs > li.active {
   border-bottom: 4px solid #f3565d;
   position: relative;
+	margin-bottom: -5px;
 }
 .tabbable-line > .nav-tabs > li.active > a {
   border: 0;
@@ -54,5 +100,3 @@
 .portlet .tabbable-line > .tab-content {
   padding-bottom: 0;
 }
-
-/* Below tabs mode */

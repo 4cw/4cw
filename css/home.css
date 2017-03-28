@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito|Pacifico|Allerta');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito|Pacifico|Allerta|PT+Sans+Narrow');
 
-p {font-family: 'Nunito';}
+p {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 125%;
+}
+
 ul {font-family: 'Nunito';}
 
 h1 {
@@ -37,5 +41,17 @@ h1 {
     font-family: 'Nunito';
 }
 .home{
+
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color: #F3E5F5;
+    border-radius: 20px;
+}
+.panel{
+  border: 0;
+  box-shadow: 0;
+  padding: 2px;
 
 }
