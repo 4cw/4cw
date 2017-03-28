@@ -14,6 +14,11 @@ body {background-color:#582c83}
 }
 
 
+.nav {
+    display: flex;
+    align-items: center;
+}
+
 #dLabel{
     border: none;
     margin: auto;
@@ -58,11 +63,7 @@ body {background-color:#582c83}
   font-size: 150%;
 }
 
-
 .container{
-
   border-left: solid #E0E0E0 30px;
   border-right: solid #E0E0E0 30px;
-
-
 }
