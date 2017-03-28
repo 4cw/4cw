@@ -46,3 +46,23 @@ body {background-color:#582c83}
 .nav li:hover li a:hover {
   background-color: #F3E5F5;
 }
+
+
+.navbar-default{
+    background-color: #582c83;
+}
+
+.header{
+  color:  #ffffff;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+
+.container{
+  
+  border-left: solid #E0E0E0 30px;
+  border-right: solid #E0E0E0 30px;
+  
+ 
+}

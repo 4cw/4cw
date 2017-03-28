@@ -4,7 +4,9 @@
 </head>
 
 <template name="layout">
+
 	<div class="container" id="maincontent">
+
 		<div class="pacifico"><aa href="{{pathFor 'home'}}">
 			4collegewomen</aa></div>
 
@@ -26,9 +28,10 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      	<ul class="nav navbar-nav">
-							<li><a href="{{pathFor 'home'}}" id= "home" >Home</a></li>
-							<li><a href="{{pathFor 'legal'}}" id = "legal">Legal</a></li>
-							<li>
+							<li><a href="{{pathFor 'home'}}" id= "home" class = "header">Home</a></li>
+							<li><a href="{{pathFor 'about'}}" id= "about" class = "header">About Us</a></li>
+							<li><a href="{{pathFor 'legal'}}" id= "legal" class = "header">Legal</a></li>
+							<li class = "header">
 								<div class="dropdown" >
 									<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										Categories
@@ -37,7 +40,8 @@
 									{{> sidebar}}
 								</div>
 							</li>
-						</ul>
+					
+				</ul>
 		    </div><!-- /.navbar-collapse -->
 
 		  </div><!-- /.container-fluid -->
