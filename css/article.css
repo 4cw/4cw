@@ -48,6 +48,10 @@ font-family: 'Fjalla One', sans-serif;
   padding: 10px;
 }
 
+.tabbable-line > .nav {
+	display: inline;
+}
+
 .tabbable-line > .nav-tabs {
   border: none;
   margin: 0px;
