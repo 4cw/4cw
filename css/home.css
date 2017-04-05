@@ -63,7 +63,7 @@ h1 {
 }
 
 .circles .circle{
-	width: calc(20% - 40px);
+	width: 170px;
 	position: relative;
 	margin: 10px;
 	background-color: purple;
