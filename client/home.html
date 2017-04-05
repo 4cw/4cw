@@ -1,375 +1,243 @@
 <head>
-    <link rel="home" href="../css/home.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito|Pacifico" rel="stylesheets">
+	<link rel="home" href="../css/home.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito|Pacifico" rel="stylesheets">
 	<!-- Makes website not scalable for mobile devices -->
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1">
 </head>
 
 <template name="home">
 
+	<div class="circles">
 
+		<div class="circle">
+			<a href="{{pathFor 'generalLinks'}}">
+				<div class="inner off">
+					<p>General Health and Prevention</p>
+				</div>
+				<div class="inner on">
+					<p>Special Issues For College Women</p>
+					<p>Information To Build a Healthier Life</p>
+					<p>Nutrition</p>
+					<p>and more!</p>
+				</div>
+			</a>
+		</div>
 
-  <div class="circles">
+		<div class="circle">
+			<a href="{{pathFor 'alcoholLinks'}}">
+				<div class="inner off">
+					Tobacco, Alcohol<br>and<br>Substance Abuse
+				</div>
+				<div class="inner on">
+					General Issues<br>
+					Need Treatment?<br>
+					Tobacco<br>
+					Alcohol<br>
+					Drugs of Abuse<br>
+					Other Drugs of Abuse (NIDA factsheets)<br>
+					Other Issues<br>
+				</div>
+			</a>
+		</div>
 
-    <div class="circle">
-      <a href="{{pathFor 'generalLinks'}}">
-        <div class="inner off">
-          <div class="table">
-            <div class="cell">
-              General Health<br>and<br>Prevention
+		<div class="circle">
+			<a href="{{pathFor 'reproductiveLinks'}}">
+				<div class="inner off">
+					Reproductive<br>Health
+				</div>
+				<div class="inner on">
+					Sexual and Reproductive Health<br>
+					Sexually Transmitted Infections<br>
+					Pregnancy Related Issues<br>
+					Breast Health<br>
+					Other Issues<br>
+				</div>
+			</a>
+		</div>
 
-            </div>
-          </div>
-        </div>
-        <div class="inner on">
-          <div class="table">
-            <div class="cell txt">
-                Special Issues For College Women<br>
-                Information To Build a Healthier Life<br>
-                Nutrition<br>
-                Fitness<br>
-                and more!
-                <!--
-                Women with Disabilities<br>
-                Common Infectious Diseases<br>
-                Sleep Disorders<br>
-                Other Issues<br>
-              -->
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
+		<div class="circle">
+			<a href="{{pathFor 'emotionalLinks'}}">
+				<div class="inner off">
+					Emotional<br>and<br>Mental Health
+				</div>
+				<div class="inner on">
+					General Issues<br>
+					Anxiety Disorders<br>
+					Mood disorders<br>
+					Eating Disorders<br>
+					Schizophrenia<br>
+					Suicide<br>
+					Treatment<br>
+					Other Issues<br>
+				</div>
+			</a>
+		</div>
 
-    <div class="circle">
-      <a href="{{pathFor 'alcoholLinks'}}">
-        <div class="inner off">
-          <div class="table">
-            <div class="cell">
-                Tobacco, Alcohol<br>and<br>Substance Abuse
-            </div>
-          </div>
-        </div>
-        <div class="inner on">
-          <div class="table">
-            <div class="cell txt">
-              General Issues<br>
-              Need Treatment?<br>
-              Tobacco<br>
-              Alcohol<br>
-              Drugs of Abuse<br>
-              Other Drugs of Abuse (NIDA factsheets)<br>
-              Other Issues<br>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
+		<div class="circle">
+			<a href="{{pathFor 'diseasesLinks'}}">
+				<div class="inner off">
+					Diseases<br>and<br>Conditions
+				</div>
+				<div class="inner on">
+					Infectious Diseases<br>
+					Sexually Transmitted Infections<br>
+					Chronic Illnesses<br>
+				</div>
+			</a>
+		</div>
 
-    <div class="circle">
-      <a href="{{pathFor 'reproductiveLinks'}}">
-        <div class="inner off">
-          <div class="table">
-            <div class="cell">
-              Reproductive<br>Health
-            </div>
-          </div>
-        </div>
-        <div class="inner on">
-          <div class="table">
-            <div class="cell txt">
-              Sexual and Reproductive Health<br>
-              Sexually Transmitted Infections<br>
-              Pregnancy Related Issues<br>
-              Breast Health<br>
-              Other Issues<br>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
+		<div class="circle">
+			<a href="{{pathFor 'safetyLinks'}}">
+				<div class="inner off">
+					Safety<br>and<br>Violence Related Issues
+				</div>
+				<div class="inner on">
+					General Safety Information<br>
+					Workplace Safety and Health<br>
+					Violence Issues<br>
+					Terrorism and Disasters<br>
+					Other Issues<br>
+				</div>
+			</a>
+		</div>
 
-    <div class="circle">
-      <a href="{{pathFor 'emotionalLinks'}}">
-        <div class="inner off">
-          <div class="table">
-            <div class="cell">
-              Emotional<br>and<br>Mental Health
-            </div>
-          </div>
-        </div>
-        <div class="inner on">
-          <div class="table">
-            <div class="cell txt">
-              General Issues<br>
-              Anxiety Disorders<br>
-              Mood disorders<br>
-              Eating Disorders<br>
-              Schizophrenia<br>
-              Suicide<br>
-              Treatment<br>
-              Other Issues<br>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
+		<div class="circle">
+			<a href="{{pathFor 'alternativeLinks'}}">
+				<div class="inner off">
+					Alternative<br>and<br>Complementary Medicine
+				</div>
+				<div class="inner on">
+					Complementary and Alternative Medicine<br>
+					Decisions About Using Complementary and Alternative Medicine<br>
+					Treatment Information (by Treatment or Therapy / by Disease or Condition)<br>
+					......<br>
+				</div>
+			</a>
+		</div>
 
-    <div class="circle">
-      <a href="{{pathFor 'diseasesLinks'}}">
-        <div class="inner off">
-          <div class="table">
-            <div class="cell">
-              Diseases<br>and<br>Conditions
-            </div>
-          </div>
-        </div>
-        <div class="inner on">
-          <div class="table">
-            <div class="cell txt">
-              Infectious Diseases<br>
-              Sexually Transmitted Infections<br>
-              Chronic Illnesses<br>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
+		<div class="circle">
+			<a href="{{pathFor 'minorityLinks'}}">
+				<div class="inner off">
+					Minority Women's Health
+				</div>
+				<div class="inner on">
+					General Issues
+				</div>
+			</a>
+		</div>
 
-    <div class="circle">
-      <a href="{{pathFor 'safetyLinks'}}">
-        <div class="inner off">
-          <div class="table">
-            <div class="cell">
-              Safety<br>and<br>Violence Related Issues
-            </div>
-          </div>
-        </div>
-        <div class="inner on">
-          <div class="table">
-            <div class="cell txt">
-              General Safety Information<br>
-              Workplace Safety and Health<br>
-              Violence Issues<br>
-              Terrorism and Disasters<br>
-              Other Issues<br>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
+		<div class="circle">
+			<a href="{{pathFor 'disabilityLinks'}}">
+				<div class="inner off">
+					Women<br>and<br>Disabilities
+				</div>
+				<div class="inner on">
+					General Issues
+				</div>
+			</a>
+		</div>
 
-    <div class="circle">
-      <a href="{{pathFor 'alternativeLinks'}}">
-        <div class="inner off">
-          <div class="table">
-            <div class="cell">
-              Alternative<br>and<br>Complementary Medicine
-            </div>
-          </div>
-        </div>
-        <div class="inner on">
-          <div class="table">
-            <div class="cell txt">
-              Complementary and Alternative Medicine<br>
-              Decisions About Using Complementary and Alternative Medicine<br>
-              Treatment Information (by Treatment or Therapy / by Disease or Condition)<br>
-              ......<br>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
+		<div class="circle">
+			<a href="{{pathFor 'careerLinks'}}">
+				<div class="inner off">
+					Health Career Opportunities
+				</div>
+				<div class="inner on">
+					Internships<br>
+					Training Opportunties<br>
+					Public Health Career Links<br>
+					Medical Career Links<br>
+					Conferences<br>
+					Volunteer Opportunities in Health<br>
+				</div>
+			</a>
+		</div>
 
-    <div class="circle">
-      <a href="{{pathFor 'minorityLinks'}}">
-        <div class="inner off">
-          <div class="table">
-            <div class="cell">
-              Minority Women's Health
-            </div>
-          </div>
-        </div>
-        <div class="inner on">
-          <div class="table">
-            <div class="cell txt">
-              General Issues
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
+		<div class="circle">
+			<a href="{{pathFor 'insuranceLinks'}}">
+				<div class="inner off">
+					Health Insurance Issues
+				</div>
+				<div class="inner on">
+					Insurance Issues in College<br>
+					Health Coverage and Access to Care<br>
+					State Level Analysis<br>
+					Medicaid Facts<br>
+					Medicaid's Role for Women<br>
+					Medicare at a Glance<br>
+					Women and Medicare<br>
+				</div>
+			</a>
+		</div>
 
-    <div class="circle">
-      <a href="{{pathFor 'disabilityLinks'}}">
-        <div class="inner off">
-          <div class="table">
-            <div class="cell">
-              Women<br>and<br>Disabilities
-            </div>
-          </div>
-        </div>
-        <div class="inner on">
-          <div class="table">
-            <div class="cell txt">
-              General Issues
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
+		<div class="circle">
+			<a href="{{pathFor 'resourcesLinks'}}">
+				<div class="inner off">
+					Helpful Resources
+				</div>
+				<div class="inner on">
+					Map of Resources<br>
+					Drug Information<br>
+					Health Tutorials<br>
+					Health Statistics<br>
+					Student Resources<br>
+					Public Health Pictures and Images<br>
+					Global Health Odyssey Museum<br>
+					......<br>
+				</div>
+			</a>
+		</div>
 
-    <div class="circle">
-      <a href="{{pathFor 'careerLinks'}}">
-        <div class="inner off">
-          <div class="table">
-            <div class="cell">
-              Health Career Opportunities
-            </div>
-          </div>
-        </div>
-        <div class="inner on">
-          <div class="table">
-            <div class="cell txt">
-              Internships<br>
-              Training Opportunties<br>
-              Public Health Career Links<br>
-              Medical Career Links<br>
-              Conferences<br>
-              Volunteer Opportunities in Health<br>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
+		<div class="circle">
+			<a href="{{pathFor 'libraryLinks'}}">
+				<div class="inner off">
+					Health Library
+				</div>
+				<div class="inner on">
+					Online Medical Resources, Journals, and Dictionaries<br>
+					Medical Encyclopedia<br>
+					Medical Dictionary<br>
+					MedLine Plus<br>
+					Human Anatomy<br>
+					Health Tutorials<br>
+					Health Statistics<br>
+					Anatomy of the Body<br>
+				</div>
+			</a>
+		</div>
 
-    <div class="circle">
-      <a href="{{pathFor 'insuranceLinks'}}">
-        <div class="inner off">
-          <div class="table">
-            <div class="cell">
-              Health Insurance Issues
-            </div>
-          </div>
-        </div>
-        <div class="inner on">
-          <div class="table">
-            <div class="cell txt">
-              Insurance Issues in College<br>
-              Health Coverage and Access to Care<br>
-              State Level Analysis<br>
-              Medicaid Facts<br>
-              Medicaid's Role for Women<br>
-              Medicare at a Glance<br>
-              Women and Medicare<br>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
+		<div class="circle">
+			<a href="{{pathFor 'diffLangLinks'}}">
+				<div class="inner off">
+					Health Information In Different Languages
+				</div>
+				<div class="inner on">
+					Women's Health Information In Different Languages<br>
+					Su Guia a la Informacion Confiable de la Salud<br>
+					Informacion de Salud para Adolescentes: En Espanol<br>
+					Que es la Medicina Complementaria y Alternativa?<br>
+				</div>
+			</a>
+		</div>
 
-    <div class="circle">
-      <a href="{{pathFor 'resourcesLinks'}}">
-        <div class="inner off">
-          <div class="table">
-            <div class="cell">
-              Helpful Resources
-            </div>
-          </div>
-        </div>
-        <div class="inner on">
-          <div class="table">
-            <div class="cell txt">
-              Map of Resources<br>
-              Drug Information<br>
-              Health Tutorials<br>
-              Health Statistics<br>
-              Student Resources<br>
-              Public Health Pictures and Images<br>
-              Global Health Odyssey Museum<br>
-              ......<br>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
+		<div class="circle">
+			<a href="{{pathFor 'menLinks'}}">
+				<div class="inner off">
+					Men's Health
+				</div>
+				<div class="inner on">
+					What Do You Know About Men's Health?<br>
+					Men's Health Topics<br>
+				</div>
+			</a>
+		</div>
+	</div>
 
-    <div class="circle">
-      <a href="{{pathFor 'libraryLinks'}}">
-        <div class="inner off">
-          <div class="table">
-            <div class="cell">
-              Health Library
-            </div>
-          </div>
-        </div>
-        <div class="inner on">
-          <div class="table">
-            <div class="cell txt">
-              Online Medical Resources, Journals, and Dictionaries<br>
-              Medical Encyclopedia<br>
-              Medical Dictionary<br>
-              MedLine Plus<br>
-              Human Anatomy<br>
-              Health Tutorials<br>
-              Health Statistics<br>
-              Anatomy of the Body<br>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="circle">
-      <a href="{{pathFor 'diffLangLinks'}}">
-        <div class="inner off">
-          <div class="table">
-            <div class="cell">
-              Health Information In Different Languages
-            </div>
-          </div>
-        </div>
-        <div class="inner on">
-          <div class="table">
-            <div class="cell txt">
-              Women's Health Information In Different Languages<br>
-              Su Guia a la Informacion Confiable de la Salud<br>
-              Informacion de Salud para Adolescentes: En Espanol<br>
-              Que es la Medicina Complementaria y Alternativa?<br>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="circle">
-      <a href="{{pathFor 'menLinks'}}">
-        <div class="inner off">
-          <div class="table">
-            <div class="cell">
-              Men's Health
-            </div>
-          </div>
-        </div>
-        <div class="inner on">
-          <div class="table">
-            <div class="cell txt">
-              What Do You Know About Men's Health?<br>
-              Men's Health Topics<br>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-
-
-  </div>
-
-        <div class="text-center" id="redesign">
-              <h3 align="center">
-                We're redesigning 4collegewomen.org,
-Here is the version from 15 years ago!!</h3>
-        <hr>
-        <img src = "images/Old4cw.png" width="100%">
-</div>
+	<div class="text-center" id="redesign">
+		<h3 align="center">
+			We're redesigning 4collegewomen.org,
+			Here is the version from 15 years ago!!</h3>
+		<hr>
+		<img src = "images/Old4cw.png" width="100%">
+	</div>
 </template>
