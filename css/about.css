@@ -1,0 +1,14 @@
+ul {
+ list-style: none;
+}
+
+.about {
+	font-size: 150%;
+	text-align: center;
+	color: #582c83;
+}
+
+.legal {
+	padding: 2%;
+	
+}
