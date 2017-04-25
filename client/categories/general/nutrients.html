@@ -1,4 +1,680 @@
 <template name="nutrients">
+
+<link rel="stylesheet" href="general.css">
+
+  <head><h1>Nutrients</h1></head>
+  <div class="tabbable-panel">
+          <div class="tabbable-line">
+            <ul class="nav nav-tabs ">
+              <li class="active">
+                <a href="#tab_nutrients_1" data-toggle="tab">
+                Getting Enough Nutrients </a>
+              </li>
+              <li>
+                <a href="#tab_nutrients_2" data-toggle="tab">
+                Who is at Risk for Vitamin Deficiency? </a>
+              </li>
+              <li>
+                <a href="#tab_nutrients_3" data-toggle="tab">
+                Should I Take Supplements? </a>
+              </li>
+              <li>
+                <a href="#tab_nutrients_4" data-toggle="tab">
+                How Much Does My Body Really Need? </a>
+              </li>
+              <li>
+                <a href="#tab_nutrients_5" data-toggle="tab">
+                References and Resources </a>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <div class="tab-pane active" id="tab_nutrients_1">
+              <div class="box">
+                <img src="http://4collegewomen.brandeis.edu/graphics/pyramid.gif" alt="Food Pyramid" align="right" width="118" height="92">
+                <p>The Food Guide Pyramid is a simple, reliable way to plan a nutritious eating pattern. The Pyramid is an outline of what to eat each day. It's not a rigid prescription, but a general guide that lets you choose a healthful diet that's right for you.</p>              
+
+                The Pyramid calls for eating a variety of foods to get the nutrients you need and at the same time the right amount of calories to maintain or improve your weight. The Pyramid also focuses on fat because most Americans' diets are too high in fat, especially saturated fat.              
+
+                <p>For more information on the Food Pyramid, check out <a href="foodpyramid.html">this page</a>.</p>             
+                <p>See also <a href="{{pathFor 'eatingHealthy'}}">Eating Healthy</a>. If you want to use interactive online tools to plan a better diet, visit <a href="http://www.caloriescount.org/calculator.html">Calorie Calculator</a>, <a href="http://www.nhlbisupport.com/chd1/create.htm">Create-a-Diet</a>, <a href="http://www.cnpp.usda.gov/HealthyEatingIndex.htm">Interactive Healthy Eating Index</a>, <a href="http://hp2010.nhlbihin.net/menuplanner/menu.cgi">Interactive Menu Planner</a>, and <a href="http://5aday.gov/track-formhabits.shtml">Rate Your Health Habits</a>.</p>         
+              </div>
+              </div>
+              <div class="tab-pane" id="tab_nutrients_2">
+                <div class="box">
+                <p>Within the category of college women, some people are at risk for vitamin deficiency.</p>
+               <b>Women</b> need to get enough calcium and vitamin D to build strong bones and prevent <a href="{{pathFor 'osteoporosis'}}">osteoporosis</a>. Women of childbearing age are at risk for low iron stores because of menstruation.
+                <p>Women on  <b>hormonal birth control</b> (like the Pill, the Patch, the Ring, Depo-Provera, and Norplant) may have different amounts of some vitamins and other substances in the blood. For instance, the levels of the B vitamins and vitamin C decrease slightly, and the vitamin A level increases. However, this is not considered to be serious enough to require nutritional supplements. Just remember to eat right. </p>
+                <p><b>College students</b> tend to eat too few meals and too much junk food. Many of us can't find enough foods we like in our cafeterias, and we don't always have enough time to exercise.</p>
+                <p><b>Teenage girls and women of childbearing age</b> need enough good sources of iron, such as lean meats and cereals with added nutrients, to keep up their iron stores. <b>Adolescent</b> girls and boys are at risk for low iron stores; they traditionally have been prone to anemia because of rapid growth rates, erratic eating habits, and concerns about body image.</p>
+                <p><b>Pregnant or lactating women</b> need extra amounts of certain nutrients, such as folic acid, which contributes to fetuses' health. Pregnant women are at risk for low iron stores due to the baby's needs and blood loss during childbirth.</p>
+                <p>People who are <b>under stress</b> or <b>sick</b> might not be getting enough nutrients.</p>
+                <p><b><a href="{{pathFor 'vegetarianism'}}">Vegetarians and vegans</a></b> need to make sure they are getting enough calcium, vitamin D, vitamin B<sub>12</sub>, iron, omega-3 fatty acids, and zinc.</p>
+                <p><b>Smokers</b> might need to get extra vitamin C because their bodies' metabolism of the vitamin is higher than nonsmokers'.</p>
+                <p><b>Long-distance runners</b> are at risk for low iron stores, because their demanding exertions may somehow damage red blood cells.</p>
+
+
+
+              </div>
+            </div>
+              <div class="tab-pane" id="tab_nutrients_3">
+                <div class="box">
+               <p>Vitamins and minerals are nutrients found naturally in food. <b>The best way to get vitamins and minerals is through the food you eat, not any supplements you might take.</b> Try to eat the number of servings of food recommended by the <a href="foodpyramid.html">Food Guide Pyramid</a> each day. Pick foods that are lower in fat and added sugars. If you can't eat enough, then ask a healthcare professional whether you should be taking a multivitamin/mineral supplement.</p>
+              <p>Contact your doctor, your campus health center, your campus dietitian or nutritionist, or the National Center for Nutrition and Dietetics' Consumer Nutrition Hotline (1-800-366-1655). You can also <a href="http://www.eatright.org/cps/rde/xchg/ada/hs.xsl/home_4874_ENU_HTML.htm">search for a dietitian near you</a>.</p>
+              <p>To take a quiz to see if you might need a multivitamin/mineral supplement, visit the American Dietetic Association at <a href="http://www.eatright.org/cps/rde/xchg/ada/hs.xsl/nutrition_5455_ENU_HTML.htm">http://www.eatright.org/cps/rde/xchg/ada/hs.xsl/nutrition_5455_ENU_HTML.htm</a>. Be sure to ask a healthcare professional in addition, because you may have special nutrition needs that this quiz can't take into account.</p>
+              <p>See also <a href="http://www.vitacost.com/Vitamin.html">Not All Multivitamins Pack the Same Punch</a>.</p>
+              </div>
+              </div>
+              <div class="tab-pane" id="tab_nutrients_4">
+              <div class="box">
+              <p>The Recommended Daily Allowance (RDA) is how much of each
+              nutrient most people need in order to be healthy.  RDAs
+              are different according to sex and age. The RDAs are determined
+              by the Food and Nutrition Board of the National Academy of
+              Sciences.  The Nutrition Board has been developing a new
+              set of nutrient reference values based on current scientific
+              knowledge to replace the RDAs with the Dietary
+              Reference Intakes (DRIs).  The information provided below is
+              based on the most current information available, and has been
+              adapted from the NIH Clinical Center (<a href=
+              "http://www.cc.nih.gov/ccc/supplements">http://www.cc.nih.gov/ccc/supplements</a>)
+              and from the Food and Nutrition Information Center of the FDA
+              (<a href=
+              "http://www.nal.usda.gov/fnic/dga/">http://www.nal.usda.gov/fnic/dga</a>), especially the section on <a href="http://www.nal.usda.gov/fnic/etext/000105.html">DRIs and RDAs</a>.</p>
+            <p>Tolerable Upper Intake Levels (ULs) are the highest amount of a vitamin or mineral that you can take while still being moderately safe. All food, water, and supplements that you consume count towards the UL for any particular vitamin or element. On this factsheet, ULs appear either in parentheses after RDAs, or labeled as ULs on the next line.</p>
+            <p><b>NOTE: All RDAs and ULs below are for women who are not pregnant or lactating, unless indicated otherwise.</b></p>
+            [ <a href="#nutrients__top">To Top</a> ]
+            <div id='nutrients__fatsolubleTop'>
+              <h2>Fat Soluble Vitamins</h2>
+              <b><p><u>
+              <a href="#nutrients__A">Vitamin A</a><br>
+              <a href="#nutrients__D">Vitamin D</a><br>
+              <a href="#nutrients__E">Vitamin E</a><br>
+              <a href="#nutrients__K">Vitamin K</a></u></p></b>
+            </div>        
+
+            <div id='nutrients__A'>
+              <h3><u>VITAMIN A</u></h3>
+              <p>Vitamin A helps in the formation and maintenance of healthy teeth, skeletal and soft tissue, mucous membranes, and skin. It is also known as retinol because it generates the pigments in the retina. Vitamin A promotes good vision, especially in dim light. It may also be required for reproduction and lactation. Beta carotene, which has antioxidant properties, is a precursor to Vitamin A.</p>
+              <p>Vitamin A deficiency can increase the susceptibility to infectious diseases, as well as cause vision problems. Large doses of Vitamin A can be toxic. They can also cause abnormal fetal development in pregnant women. Increased amounts of beta-carotene can turn the color of skin to yellow or orange. The skin color returns to normal once the increased intake of beta-carotene is reduced.</p>
+              <p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002400.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002400.htm</a> and <a href="http://www.cc.nih.gov/ccc/supplements/vita.html">http://www.cc.nih.gov/ccc/supplements/vita.html</a>.</p>
+              <p><b>RDA</b>: 14-18 years old: 700 micrograms/day (no more than 2800). 19-30 years old: 700 micrograms/day (no more than 3000).</p>
+              <p><h4>Vitamin A Food Sources</h4></p>
+              <p>Vitamin A comes from animal sources (such as eggs and meat), and is present in the form of a precursor called beta-carotene, when manufactured by plants.</p>
+              <p>Vitamin A is found in milk, cheese, cream, liver, kidney, cod and halibut fish oil. All of these sources, except for skim milk that has been fortified with Vitamin A, are high in saturated fat and cholesterol. The vegetable sources of beta-carotene are fat and cholesterol free.</p>
+              <p>The body regulates the conversion of beta-carotene to Vitamin A based on the body's needs. Sources of beta-carotene are carrots, pumpkin, sweet potatoes, winter squashes, cantaloupe, pink grapefruit, apricots, broccoli, spinach, and most dark green, leafy vegetables. The more intense the color of a fruit or vegetable, the higher the beta-carotene content.</p>
+              <p>For a
+              list of how much vitamin A selected food sources have, visit
+              <a href=
+              "http://www.cc.nih.gov/ccc/supplements/vita.html">http://www.cc.nih.gov/ccc/supplements/vita.html</a>.</p>
+              <p>[ <a href="#nutrients__fatsolubleTop">Top of Section</a> ]</p>
+            </div>        
+
+            <div id='nutrients__D'>
+              <h3><u>VITAMIN D</u></h3>
+              <p>Vitamin D is a fat-soluble vitamin that is used in the absorption of calcium. Vitamin D promotes the body's absorption of calcium, which is essential for the normal development of healthy teeth and bones. It also helps maintain adequate blood levels of the minerals calcium and phosphorus.</p>
+              <p>Vitamin D is also known as the "sunshine vitamin" because the body manufactures the vitamin after being exposed to sunshine. It can be obtained through 15-20 minutes of direct sunlight on your skin each day. However, this may be a more risky way of getting vitamin D than through your diet:
+                <ul><li>Wearing sunscreen interferes with your body's production of vitamin D, but wearing no sunscreen increases your risk of developing skin cancers.</li>
+                    <li>Additionally, getting enough vitamin D from 15-20 minutes of sunlight might be impossible for many people due to cold climates, smoggy skies, dark skin, concealment of skin for religious reasons, and sunscreen with an SPF of 8 or greater, all of which may affect the amount of vitamin D produced by sun exposure. All of the people mentioned here would have to expose themselves to the sun for longer than 15-20 minutes without sunscreen to get enough vitamin D.</li>
+                    <li>Therefore, try to depend on foods, not on sunlight, to get the vitamin D you need.</li>
+                  </ul></p>
+              <p>A vitamin D deficiency leads to soft bones or rickets. Large doses of vitamin D can result in increased calcium absorption from the intestinal tract, and possibly also to increased calcium resorption from the bones, leading to elevated levels of calcium in the blood.  This can lead to abnormal calcium deposition in soft tissues, such as the heart and lungs, reducing their ability to function.</p>
+              <p>Fore more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002405.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002405.htm</a>, <a href="http://www.cc.nih.gov/ccc/supplements/vitd.html">http://www.cc.nih.gov/ccc/supplements/vitd.html</a>, and <a href="http://www.healthfinder.gov/news/newsstory.asp?docID=507950">http://www.healthfinder.gov/news/newsstory.asp?docID=507950</a>.</p>
+              <p><b>RDA</b>: 14-18 years old: 5 micrograms/day (no more than 50). 19-30 years old: 5 micrograms/day (no more than 50).</p>
+              <p><h4>Vitamin D Food Sources</h4></p>
+              Vitamin D is found in cheese, butter, margarine, cream, fortified milk (all milk in the United States is fortified with Vitamin D), liver, egg yolks, fish, oysters, and fortified cereals. For a
+              list of how much vitamin D selected food sources have, visit
+              <a href="http://www.cc.nih.gov/ccc/supplements/vitd.html">http://www.cc.nih.gov/ccc/supplements/vitd.html</a>.
+              <p>[ <a href="#nutrients__fatsolubleTop">Top of Section</a> ]</p>
+            </div>        
+
+            <div id='nutrients__E'>
+              <h3><u>VITAMIN E</u></h3>
+              <p>Vitamin E is a fat-soluble vitamin; it is one of the vitamins that act as antioxidants. It is an antioxidant that protects body tissue from the damage of oxidation. It is important in the formation of red blood cells and the use of vitamin K.</p>
+              <p>There is no known dietary deficiency of vitamin E. There are no known toxic effects to megadoses of vitamin E. Occasional side effects such as headache have been reported.</p>
+              <p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002406.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002406.htm</a> and <a href="http://www.cc.nih.gov/ccc/supplements/vite.html">http://www.cc.nih.gov/ccc/supplements/vite.html</a>.</p>
+              <p><b>RDA</b>: 14-18 years old: 15 milligrams/day (no more than 800). 19-30 years old: 15 milligrams/day (no more than 1000).</p>
+              <p><h4>Vitamin E Food Sources</h4></p>
+              Vitamin E is found in wheat germ, corn, nuts, seeds, olives, spinach, asparagus, and other green leafy vegetables, vegetable oils (corn, sunflower, soybean, and cottonseed), and products made from them such as margarine.  For a
+        list of how much vitamin E selected food sources have, visit
+        <a href=
+        "http://www.cc.nih.gov/ccc/supplements/vite.html">http://www.cc.nih.gov/ccc/supplements/vite.html</a>.
+        <p>[ <a href="#nutrients__fatsolubleTop">Top of Section</a> ]</p>
+          </div>        
+
+          <div id='nutrients__K'>
+            <h3><u>VITAMIN K</u></h3>
+            <p>Vitamin K is known as the clotting vitamin, because without it blood would not clot.</p>
+            <p>Vitamin K deficiency is very rare. It occurs when there is an inability to absorb the vitamin from the intestinal tract, and can also occur after prolonged treatment with oral antibiotics.</p>
+            <p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002407.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002407.htm</a>.</p>
+            <p><b>RDA</b>: 14-18 years old: 75 micrograms/day. 19-30 years old: 90 micrograms/day.<br><b>UL</b>: No established UL -- consult with a healthcare professional before consuming more than the RDA.</p>
+            <p><h4>Vitamin K Food Sources</h4></p>
+            <p>Cabbage, cauliflower, spinach, and other green leafy vegetables, cereals, soybean, and other vegetables. Vitamin K is also made by the bacteria that line the gastrointestinal tract. </p>
+            <p>[ <a href="#nutrients__fatsolubleTop">Top of Section</a> ]</p>
+            <br>[ <a href="#nutrients__top">Top of Page</a> ]
+        </div>        
+
+          <div id='nutrients__watersoluble'>
+            <h2>Water Soluble Vitamins</h2>       
+
+            <b><u><a href="#nutrients__b1">Vitamin B<sub>1</sub> (Thiamine)</a><br>
+            <a href="#nutrients__b2">Vitamin B<sub>2</sub> (Riboflavin)</a><br>
+            <a href="#nutrients__b3">Vitamin B<sub>3</sub> (Niacin)</a><br>
+            <a href="#nutrients__b6">Vitamin B<sub>6</sub> (Pyroxidine)</a><br>
+            <a href="#nutrients__b9">Vitamin B<sub>9</sub> (Folic Acid, Folate)</a><br>
+            <a href="#nutrients__b12">Vitamin B<sub>12</sub> <sub></sub>(Cobalamin)</a><br>
+            <a href="#nutrients__c">Vitamin C (Ascorbic Acid)</a><br>
+            <a href="#nutrients__bpa">Biotin and Pantothenic Acid</a><br>
+            <a href="#nutrients__choline">Choline</a></u></b>
+            <p></p>       
+
+              <p></p>
+          </div>        
+
+          <div id='nutrients__b1'>
+            <h3><u>VITAMIN B<sub>1</sub> (THIAMINE)</u></h3>
+            <p>Thiamine (B<sub>1</sub>) helps the body cells convert carbohydrates into energy. It is also essential for the functioning of the heart, muscles, and nervous system.</p>
+            <p>A deficiency of thiamine can cause weakness, fatigue, psychosis, and nerve damage. Thiamine deficiency is most commonly seen in alcoholics. A total absence of thiamine can cause the disease called beriberi, which is very rare in the United States. There is no known toxicity to thiamine.</p>
+            <p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002401.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002401.htm</a>.</p>
+            <p><b>RDA</b> for thiamine: 14-18 years old: 1.0 milligram/day. 19-30 years old: 1.1 milligram/day.<br><b>UL</b> for thiamine: No established UL -- consult with a healthcare professional before consuming more than the RDA. </p>
+            <h2></h2>       
+
+             <h4>Food Sources</h4>
+             <p>Thiamine is found in fortified breads, cereals, pasta, whole grains (especially wheat germ), lean meats (especially pork), fish, dried beans, peas, and soybeans. Dairy products and milk, fruits, and vegetables are not very high in thiamine. However, when they are consumed in large amounts, they become a significant source.</p>
+            <p>[ <a href="#nutrients__watersoluble">Top of Section</a> ]</p>
+          </div>        
+
+          <div id='nutrients__b2'>
+            <h3><u>VITAMIN B<sub>2</sub> (RIBOFLAVIN)</u></h3>
+            <p></p><p>Riboflavin (B<sub>2</sub>) is important for body growth and red cell production, and helps in releasing energy from carbohydrates.</p>
+            <p>Deficiency of riboflavin is not common in the U.S. because this vitamin is plentiful in the food supply. Deficiency symptoms include dry and cracked skin and eyes that are sensitive to bright light. There is no known toxicity to riboflavin. Because riboflavin is a water-soluble vitamin, excess amounts are excreted by the body in the urine.</p>
+            <p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002411.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002411.htm</a>.</p>
+            <p><b>RDA</b> for riboflavin: 14-18 years old: 1.0 milligram/day. 19-30 years old: 1.1 milligram/day.<br><b>UL</b> for riboflavin: No established UL -- consult with a healthcare professional before consuming more than the RDA.</p>
+            <h4>Food Sources</h4>
+            <p>Riboflavin is found in lean meats, eggs, legumes, nuts, green leafy vegetables, dairy products, and milk. Breads and cereals are often fortified with riboflavin. Because riboflavin is destroyed by exposure to light, foods with riboflavin should not be stored in glass containers that are exposed to light.</p>
+            <p>[ <a href="#nutrients__watersoluble">Top of Section</a> ]</p>
+          </div>        
+
+          <div id='nutrients__b3'>
+            <h3><u>VITAMIN B<sub>3</sub> (NIACIN)</u></h3>
+            <p>Niacin (B<sub>3</sub>) assists in the functioning of the digestive system, skin, and nerves. It is also important for the conversion of food to energy.</p>
+            <p>A deficiency of niacin causes pellagra. The symptoms include inflamed skin, digestive problems, and mental impairment. Large doses of niacin can cause liver damage, peptic ulcers, and skin rashes.  It can be used as a treatment for elevated total cholesterol levels, but should only be used with medical supervision.</p>
+            <p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002409.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002409.htm</a>.</p>
+            <p><b>RDA</b> for niacin: 14-18 years old: 14 milligrams/day (no more than 30). 19-30 years old: 14 milligrams/day (no more than 35).</p>
+            <h4>Food Sources</h4>
+            <p>Niacin is found in dairy products, poultry, fish, lean meats, nuts, and eggs.  Legumes and enriched breads and cereals also supply some niacin.</p>
+            <p>[ <a href="#nutrients__watersoluble">Top of Section</a> ]</p>
+          </div>        
+
+          <div id='nutrients__b6'>
+            <h3><u>VITAMIN B<sub>6</sub> (PYROXIDINE)</u></h3>
+            <p>Vitamin B<sub>6</sub> plays a role in the synthesis of antibodies in the immune system. It helps maintain normal nerve function and acts in the formation of red blood cells. It is also required for the chemical reactions of proteins. The higher the protein intake, the more the need for vitamin B<sub>6</sub>. </p>
+            <p>Large doses of vitamin B<sub>6</sub> can cause neurological disorders and numbness. Deficiency of this vitamin is not common in the United States. The average diet supplies adequate quantities of vitamin B<sub>6    </sub>. </p>
+            <p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002402.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002402.htm</a> and <a href="http://www.cc.nih.gov/ccc/supplements/vitb6.html">http://www.cc.nih.gov/ccc/supplements/vitb6.html</a>.</p>
+            <p><b>RDA</b>: 14-18 years old: 1.2 milligrams/day (no more than 80). 19-30 years old: 1.3 milligrams/day (no more than 100).</p>
+            <h4>Vitamin B<sub>6</sub> Food Sources</h4>
+            <P>Vitamin B<sub>6</sub> is found in beans, nuts, legumes, eggs, meats, fish, whole grains, and fortified breads and cereals. For a list of how much
+              vitamin B<sub>6</sub> selected food sources have, visit <a href=
+              "http://www.cc.nih.gov/ccc/supplements/vitb6.html">http://www.cc.nih.gov/ccc/supplements/vitb6.html</a>.</p>
+            <p>[ <a href="#nutrients__watersoluble">Top of Section</a> ]</p>
+          </div>        
+
+          <div id='nutrients__b9'>
+            <h3><u>VITAMIN B<sub>9</sub> (FOLIC ACID, FOLATE)</u></h3>
+            <p>Folic acid acts as a coenzyme (with vitamin B<sub>12</sub> and vitamin C) in the breakdown (metabolism) of proteins and in the synthesis of new proteins. It is necessary for the production of red blood cells and the synthesis of DNA (which controls heredity), as well as tissue growth and cell function. It also increases the appetite and stimulates the formation of digestive acids.</p>
+            <p>Synthetic folic acid supplements may be used in the treatment of disorders associated with folic acid deficiency, and may also be part of the recommended treatment for certain menstrual problems and leg ulcers.</p>
+            <p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002408.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002408.htm</a>, <a href="http://www.cc.nih.gov/ccc/supplements/folate.html">http://www.cc.nih.gov/ccc/supplements/folate.html</a>, and <a href="http://www.youngwomenshealth.org/folicacid.html">http://www.youngwomenshealth.org/folicacid.html</a>.</p>
+            <p><b>RDA</b>: 14-18 years old: 400 micrograms/day (no more than 800). 19-30 years old: 400 micrograms/day (no more than 1000). <b>All women capable of becoming pregnant should get 400 micrograms/day from supplements or fortified foods in addition to getting folate from a varied diet.</b></p>
+            <h4>Vitamin B<sub>9</sub> Food Sources</h4>
+            <p>Beans and legumes, citrus fruits and juices,
+        wheat bran and other whole grains, dark green leafy vegetables, poultry, pork, shellfish, liver. For a list of how much vitamin B<sub>9</sub> selected food sources
+              have, visit <a href=
+              "http://www.cc.nih.gov/ccc/supplements/folate.html">http://www.cc.nih.gov/ccc/supplements/folate.html</a>.</p>
+            <p>[ <a href="#nutrients__watersoluble">Top of Section</a> ]</p>
+          </div>        
+
+          <div id='nutrients__b12'>
+            <h3><u>VITAMIN B<sub>12</sub> (COBALAMIN)</u></h3>
+            <p>Vitamin B<sub>12</sub>, like the other B vitamins, is important for metabolism. It helps in the formation of red blood cells and in the maintenance of the central nervous system.</p>
+            <p>Because the body stores several years' worth of vitamin B<sub>12</sub>, nutritional deficiency of vitamin B<sub>12</sub> is extremely rare.  An inability to absorb vitamin B<sub>12</sub> from the intestinal tract can, however, occur.  This can be caused by a disease known as pernicious anemia.  Low levels of B<sub>12</sub> can cause anemia as well as numbness or tingling in the extremities or other neurologic symptoms.</p>
+            <p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002403.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002403.htm</a> and <a href="http://www.cc.nih.gov/ccc/supplements/vitb12.html">http://www.cc.nih.gov/ccc/supplements/vitb12.html</a>.</p>
+            <p><b>RDA</b>: 14-18 years old: 2.4 micrograms/day. 19-30 years old: 2.4 micrograms/day.<br><b>UL</b>: No established UL -- consult with a healthcare professional before consuming more than the RDA.</p>
+            <h4>Vitamin B<sub>12</sub> Food Sources</h4>
+            <p>Vitamin B<sub>12</sub> is found in eggs, meat, poultry, shellfish, and milk and milk products. For a list of how much vitamin
+              B<sub>12</sub> selected food sources have, visit <a href=
+              "http://www.cc.nih.gov/ccc/supplements/vitb12.html">http://www.cc.nih.gov/ccc/supplements/vitb12.html</a>.
+              For a list of vegan foods that are high in vitamin
+              B<sub>12</sub>, check out the Vegetarian Resource
+              Group's website on nutrition at <a href=
+              "http://www.vrg.org/nutrition/b12.htm">http://www.vrg.org/nutrition/b12.htm</a>.</p>
+            <p>[ <a href="#nutrients__watersoluble">Top of Section</a> ]</p>
+          </div>        
+
+          <div id='nutrients__c'>
+            <h3><u>VITAMIN C (ASCORBIC ACID)</u></h3>
+            <p>Vitamin C promotes healthy teeth and gums, helps in the absorption of iron, helps in the maintenance of normal connective tissue, and promotes wound healing. It also helps the body's immune system.</p>
+            <p> A deficiency of vitamin C causes the disease scurvy, which is rare in the United States.</p>
+            <p>Toxicity does not normally occur, since vitamin C is water soluble and is regularly excreted by the body.  Recent studies have shown, however, that excessive doses of vitamin C (i.e., more than the RDA) can lead to toxicity.  The most common manifestations of vitamin C toxicity are kidney stones, and in very rare circumstances, anemia (caused by interference with vitamin B<sub>12</sub> absorption).</p>
+            <p>Diarrhea is also a possible (but uncommon) symptom associated with increased intake of vitamin C.</p>
+            <P>If you smoke, you need 35 milligrams of Vitamin C more each day than a non-smoker does, since smokers have a
+              higher metabolism of vitamin C. Also, non-smokers regularly exposed to tobacco should check with healthcare professionals to make sure they are getting enough vitamin C.</p>
+              <p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002404.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002404.htm</a>.</p>
+              <p></p>
+            <p><b>RDA</b>: 14-18 years old: 65 milligrams/day (no more than 1800). 19-30 years old: 75 milligrams/day (no more than 2000). <b>Smokers need 35 milligrams/day more than the RDA.</b></p>
+            <h4>Vitamin C Food Sources</h4>
+            <p>Vitamin C  is found in green peppers, citrus fruits, strawberries, tomatoes, broccoli, turnip greens and other greens, sweet and white potatoes, and cantaloupe. Most other fruits and vegetables contain some vitamin C; fish and milk contain small amounts.</p>
+            <p>[ <a href="#nutrients__watersoluble">Top of Section</a> ]</p>
+          </div>        
+
+          <div id='nutrients__bpa'>
+            <h3><u>BIOTIN AND PANTHOTHENIC ACID</u></h3>
+            <p><b></b></p>
+            <p>Pantothenic acid is essential for the metabolism of food. It is essential in the synthesis of hormones and cholesterol.</p>
+            <p>Biotin is essential for the metabolism of proteins and carbohydrates (like the other B vitamins), and in the synthesis of hormones and cholesterol.</p>
+            <p>There are no known deficiencies of either pantothenic acid or biotin.  Large doses of pantothenic acid do not produce symptoms other than (possibly) diarrhea. There are no known toxic symptoms associated with biotin.</p>
+            <p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002410.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002410.htm</a>.</p>
+            <p>Biotin <b>RDA</b>: 14-18 years old: 25 micrograms/day. 19-30 years old: 30 micrograms/day.<br><b>UL</b>: No established UL -- consult with a healthcare professional before consuming more than the RDA.</p>
+            <p>Pantothenic Acid <b>RDA</b>: 14-18 years old: 5 milligrams/day. 19-30 years old: 5 milligrams/day.<br><b>UL</b>: No established UL -- consult with a healthcare professional before consuming more than the RDA.</p>
+            <h4>Food Sources</h4>
+            <p>Pantothenic acid and biotin are found in eggs, fish, milk and milk products, whole-grain cereals, legumes, yeast, broccoli and other vegetables in the cabbage family, white and sweet potatoes, lean beef, and other foods that are good sources of the B vitamins. </p>
+            <p>[ <a href="#nutrients__watersoluble">Top of Section</a> ]</p>
+          </div>        
+
+          <div id='nutrients__choline'>
+            <h3><u>CHOLINE</u></h3>
+             <p><b></b></p>
+             <p>Our bodies can't make enough of choline if we are low in it.  Choline helps us absorb and use fats, and is required for making acetylcholine, a neurotransmitter needed for muscle control, memory storage and other functions. It contains what's known as a methyl group, which the body uses to form genetic material or DNA. For more information, visit <a href="http://www.ars.usda.gov/is/pr/2001/010330.htm">http://www.ars.usda.gov/is/pr/2001/010330.htm</a>.
+        </p>
+            <p><b>RDA</b>: 14-18 years old: 400 milligrams/day (no more than 3000). 19-30 years old: 425 milligrams/day (no more than 3500). </p>
+            <h4>Choline Food Sources</h4>
+            <p>Meats, dairy products and soy foods are rich in choline. Folate is highest in orange juice, green leafy vegetables like spinach, and bread flour or other grain products fortified with this vitamin. Nuts and liver contain both nutrients.</p>
+            <p>[ <a href="#nutrients__watersoluble">Top of Section</a> ]</p>
+            <p>[ <a href="#nutrients__top">Top of Page</a> ]</p>
+          </div>        
+
+          <div id='nutrients__elements'>
+            <h2>Elements</h2>       
+
+            <b><u><a href="#nutrients__calcium">Calcium</a><br>
+            <a href="#nutrients__chromium">Chromium</a><br>
+            <a href="#nutrients__copper">Copper</a><br>
+            <a href="#nutrients__fluoride">Fluoride</a><br>
+            <a href="#nutrients__iodine">Iodine</a><br>
+            <a href="#nutrients__iron">Iron</a><br>
+            <a href="#nutrients__magnesium">Magnesium</a><br>
+            <a href="#nutrients__manganese">Manganese</a><br>
+            <a href="#nutrients__molybdenum">Molybdenum</a><br>
+            <a href="#nutrients__phosphorus">Phosphorus</a><br>
+            <a href="#nutrients__selenium">Selenium</a><br>
+            <a href="#nutrients__zinc">Zinc</a><br><br></u></b>       
+
+          </div>        
+
+          <div id="nutrients__calcium">
+            <h3><u>CALCIUM</u></h3>
+            <p>Calcium is one of the most important minerals for the growth, maintenance, and reproduction of the human body. The bones in the human body incorporate calcium into their structure. Bones, like other tissues in the body, are continually being reabsorbed and re-formed. Teeth are also calcified tissues. They incorporate calcium in their structure in a manner similar to bones. Calcium is essential for the formation of and maintenance of healthy teeth.</p>
+            <p>Calcium has other functions in addition to maintaining healthy teeth and bones. Blood coagulation, transmission of nerve impulses, muscle contraction and relaxation, normal heart beat, stimulation of hormone secretion, activation of enzyme reactions, as well as other functions all require small amounts of calcium.</p>
+            <p>Increased calcium intake for limited periods does not normally cause toxic effects. The urine and the feces easily eliminate any excess calcium. However, an increased risk of kidney stones in persons susceptible to them has been associated with chronically high calcium intake.</p>
+            <p>Low intakes of calcium for prolonged periods of time can lead to calcium deficiency. This condition leads to osteoporosis, loss of the jaw bone (and secondary oral health problems), hypertension, and other disorders.</p>
+            <p>People with lactose intolerance have trouble digesting lactose, the sugar in milk. Lactose intolerance is due to an inability to produce lactase, the enzyme that digests milk sugar. The wall of the gastrointestinal tract normally produces this enzyme. In some people, due to diseases of the gastrointestinal tract or to hereditary factors, this enzyme cannot be produced by the body. Fortunately, lactase can be synthetically produced and bought in various over-the-counter formulations, and taken orally with milk to aid in its digestion. You can also buy "lactose-free" milk at most grocery stores.</p>
+            <p>In rare instances, some people have a true allergy to the protein in milk. This condition requires restriction of all dairy products. These individuals may have trouble obtaining enough calcium in their diet and may need to take calcium supplements.
+        </p>        
+
+              <P>Consult with a healthcare professional before taking calcium supplements or any other supplements. To read more about calcium supplements, visit <a href="http://www.nlm.nih.gov/medlineplus/druginfo/medmaster/a601032.html">http://www.nlm.nih.gov/medlineplus/druginfo/medmaster/a601032.html</a>.</p>
+                <p>For more information about calcium, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002412.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002412.htm</a> and <a href="http://www.youngwomenshealth.org/calciuminfo.html">http://www.youngwomenshealth.org/calciuminfo.html</a>. You can also take a calcium quiz at <a href="http://www.arhp.org/patienteducation/interactivetools/calciumiq/index.cfm?ID=276">Test Your Calcium IQ</a>.</p>        
+
+              <p></p>       
+
+              <p><b>RDA</b>: 14-18 years old: 1300 milligrams/day (no more than 2500). 19-30 years old: 1000 milligrams/day (no more than 2500).</p>        
+
+                   <h4>Calcium Food Sources</h4>        
+
+              <p>Many foods contain calcium but dairy products are the most significant source. Milk and dairy products such as yogurt, cheeses, and buttermilk contain a more efficiently absorbed form of calcium.</p>
+              <p>The fat content of dairy products is a concern for adults and children over the age of two (for children between the ages of 1 and 2 years old, whole milk or 4% is recommended). You can easily reduce the fat content of dairy products while maintaining the calcium content by selecting low-fat (2% or 1%) or skim milk. The calcium is not contained in the "fat portion" of milk, so removing the fat will not affect the calcium content. In fact, when you replace the fat portion that has been removed with an equal part of skimmed milk, you are actually increasing the calcium content. Therefore, one cup of skim or non-fat milk will have more calcium than one cup of whole milk because the entire cup of skim milk is the made up of the calcium-containing portion!</p>
+              <p>Other dairy products such as yogurt, most cheeses, and buttermilk are excellent sources of calcium and are available in low-fat or fat-free versions.</p>
+              <p>Milk is also a good source of phosphorus and magnesium, which help the body absorb and use the calcium more effectively. Vitamin D is also essential for efficient utilization of calcium; milk is fortified with vitamin D for this reason.</p>
+              <p>Green leafy vegetables such as broccoli, collards, kale, mustard greens, turnip greens, and bok choy or Chinese cabbage are good sources of calcium. Certain green, leafy vegetables are less effective sources of calcium. While their calcium content appears to be high, their fiber and oxalic acid content interferes with the absorption of calcium.</p>
+              <p>Other sources of calcium are salmon and sardines canned with their soft bones. Shellfish, almonds, Brazil nuts, and dried beans are also sources of calcium. It is difficult, however, to eat adequate quantities of these foods to achieve optimal calcium intake.</p>
+              <p>Several food products, such as breads and orange juice, are enriched with calcium to make them a significant source of calcium for people whose dairy product consumption is inadequate.</p>
+              <p>For
+              a list of how much calcium certain foods contain, visit <a
+              href=
+              "http://www.youngwomenshealth.org/calciuminfo.html">http://www.youngwomenshealth.org/calciuminfo.html</a>,
+              or for a list of vegan foods, check out the Vegetarian
+              Resource Group's website on nutrition at <a href=
+              "http://www.vrg.org/nutrition/calcium.htm">http://www.vrg.org/nutrition/calcium.htm</a>.
+              For more information on nutrients that women need, check out:
+              <a href=
+              "http://www.cfsan.fda.gov/~dms/wh-nutr.html">http://www.cfsan.fda.gov/~dms/wh-nutr.html</a></p>       
+
+           <p>[ <a href="#nutrients__elements">Top of Section</a> ]</p>
+           </div>       
+
+           <div id="nutrients__chromium">
+             <h3><u>CHROMIUM</u></h3>
+             <p>Chromium is a naturally occurring element found in rocks, animals, plants, soil, and in volcanic dust and gases. Chromium is present in the environment in several different forms. The most common forms are chromium(0), chromium(III), and chromium(VI). No taste or odor is associated with chromium compounds.</p>
+             <p>Chromium(III) occurs naturally in the environment and is an essential nutrient. Chromium(VI) and chromium(0) are generally produced by industrial processes. </p>
+             <p>Chromium(III) is an essential nutrient that helps the body use sugar, protein, and fat. Breathing, ingesting, or coming into contact with chromium(IV), under certain conditions, can be extremely dangerous. Some people also have allergic reactions to chromium(III).</p>
+             <p>For more information, visit <a href="http://www.atsdr.cdc.gov/tfacts7.html">http://www.atsdr.cdc.gov/tfacts7.html</a>.</p>
+             <p><b>RDA</b>: 14-18 years old: 24 micrograms/day. 19-30 years old: 25 micrograms/day.<br><b>UL</b>: No established UL -- consult with a healthcare professional before consuming more than the RDA.</p>       
+
+              <p>[ <a href="#nutrients__elements">Top of Section</a> ]</p>
+          </div>        
+
+            <div id="nutrients__copper">
+              <h3><u>COPPER</u></h3>
+              <p>Copper is a reddish metal that occurs naturally in rocks, soil, water, and air. Copper also occurs naturally in plants and animals.</p>
+              <p>Very small amounts of copper are essential for good health, but high amounts can be harmful. Long-term exposure to copper dust can irritate your nose, mouth, and eyes, and cause headaches, dizziness, nausea, and diarrhea. There is a rare hereditary disorder (Wilson's disease) that causes deposits of copper in the liver, brain, and other organs. The increased copper in these tissues leads to hepatitis, renal problems, neurologic disorders, and other problems.</p>
+              <p>
+        Drinking water with higher than normal levels of copper may cause vomiting, diarrhea, stomach cramps, and nausea. Intentionally high intakes of copper can cause liver and kidney damage and even death.</p>
+        <p>Dietary deficiency of copper is not very common in humans.</p>
+        <p>The greatest potential source of copper exposure is through drinking water, especially in water that is first drawn in the morning after sitting in copper pipes and brass faucets overnight. To reduce exposure, run the water for at least 15-30 seconds before using it.</p>
+        <p>If you are exposed to copper at work, you may carry copper home on your skin, clothes, or tools. You can avoid this by showering, and changing clothing before leaving work, and your work clothes should be kept separate from other clothes and laundered separately.</p>
+         <p>For more information, visit <a href="http://www.atsdr.cdc.gov/tfacts132.html">http://www.atsdr.cdc.gov/tfacts132.html</a>, <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002419.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002419.htm</a>, and <a href="http://www.epa.gov/OGWDW/dwh/c-ioc/copper.html">http://www.epa.gov/OGWDW/dwh/c-ioc/copper.html</a>.</p>
+         <p><b>RDA</b>: 14-18 years old: 890 micrograms/day (no more than 8000). 19-30 years old: 900 micrograms/day (no more than 10,000).</p>       
+
+              <p><h4>Copper Functions</h4></p>        
+
+              <ul>
+                <li>Formation of red blood cells</li>
+                <li>Keeping  blood vessels, nerves, immune system, and bones healthy</li></ul>
+                <p><h4>Copper Food Sources</h4></p>       
+
+              <p>Oysters and other shellfish, whole grains, beans, nuts, potatoes, and organ meats are good sources of copper. Dark leafy greens, dried fruits such as prunes, cocoa, black pepper, and yeast are also sources of copper in the diet. </p>
+              <p>[ <a href="#nutrients__elements">Top of Section</a> ]</p>
+            </div>        
+
+         <div id="nutrients__fluoride">
+           <h3><u>FLUORIDE</u></h3>
+           <p>Fluoride occurs naturally in the body as calcium fluoride, found primarily in the bones and teeth. Small amounts of fluoride help reduce tooth decay. Fluorides are also involved in the maintenance of bone structure.</p>
+           <p>Fluoride deficiency may appear in the form of increased incidence of dental caries (tooth decay) and unstable bones and teeth.</p>
+           <p>When there is a high amount of fluoride in the drinking water, a problem called chronic dental fluorosis can occur. The tooth enamel becomes dull and unglazed with some pitting (mottled enamel). At very high concentrations dark brown stains appear on the teeth. Although unsightly, these teeth rarely have any dental caries.</p>
+           <p>In addition, high fluoride intake (20 to 80 milligrams per day) over a period of many years can cause skeletal fluorosis, which causes the bones to be chalky and brittle.</p>
+        <p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002420.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002420.htm</a>.</p>
+        <p><b>RDA</b>: 14-18 years old: 3 milligrams/day (no more than 10). 19-30 years old: 3 milligrams/day (no more than 10).</p>        
+
+                <p><h4>Fluoride Food Sources</h4></p>       
+
+              <p>Fluoridated water, seafood, tea, gelatin. </p>       
+
+          <p>[ <a href="#nutrients__elements">Top of Section</a> ]</p>
+        </div>        
+        
+
+          <div id="nutrients__iodine">
+            <h3><u>IODINE</u></h3>
+            <p>Iodine is essential for the normal metabolism of cells. It is a necessary nutrient for the production of thyroid hormones and normal thyroid function.</p>
+            <p>Deficiency of iodine may occur in areas that have iodine-poor soil. Many months of iodine deficiency in the diet can cause goiter and/or hypothyroidism. With decreased iodine, the thyroid cells and the gland become enlarged. The deficiency is more prevalent in women than in men, and more common in pregnant women and adolescents. Iodine intake is stressed as a preventive measure because a goiter caused by iodine depletion can cause cretinism. Cretinism is extremely rare in the U.S. because iodine deficiency is generally not a problem.</p>
+            <p>There is no significant incidence of iodine toxicity in the U.S. Very high intake of iodine can reduce the function of the thyroid gland.</p>
+              <p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002421.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002421.htm</a></p>
+              <p><b>RDA</b>: 14-18 years old: 150 micrograms/day (no more than 900). 19-30 years old: 150 micrograms/day (no more than 1100).</p>       
+
+              <p><h4>Iodine Food Sources</h4></p>       
+
+              <p>Iodized salt, seafood (cod, sea bass, haddock, perch, kelp), dairy products, plants grown in soil that is rich in iodine. </p>       
+
+             <p>[ <a href="#nutrients__elements">Top of Section</a> ]</p>
+           </div>       
+
+           <div id="nutrients__iron">
+             <h3><u>IRON</u></h3>       
+
+              <p>The mineral iron is an essential nutrient for humans because it is part of blood cells, which carry oxygen to all body cells. About 30% of the iron in our bodies is in storage to be readily available to replace lost iron.</p>
+              <p>Iron is essential to the formation of hemoglobin and myoglobin, which carry the oxygen in the blood and the muscle. It also makes up part of many proteins and enzymes in the body.</p>
+              <p>Iron deficiency is the most common nutritional deficiency worldwide. Although full-blown anemia is rarely evident, partial deficiency is widespread.</p>
+        <p>Symptoms of decreased iron stores include general fatigue, shortness of breath, headache, irritability, and/or lethargy. If you have constant unusual signs of tiredness, see your doctor. There are many causes of such symptoms. Simply taking an iron supplement may not be the key to renewing your energy.</p>
+        <p>Iron deficiency most commonly manifests itself as iron deficiency anemia. Iron deficiency and iron deficiency anemia can occur during periods of rapid growth, during pregnancy, and among women who are menstruating more than usual. It can also be associated with any type of intestinal loss of blood, frequent donation of blood, and from the inability to absorb iron efficiently.</p>
+        <p>
+        Initial symptoms of iron deficiency anemia are fatigue and lack of energy. Dizziness, weight loss, and lowered immunity can also occur. The symptoms can be alleviated once the cause of the iron deficiency has been determined.</p>
+        <p>
+        It is unlikely that iron toxicity can develop from an increased dietary intake of iron alone. Symptoms of iron toxicity are fatigue, anorexia, dizziness, nausea, vomiting, headache, weight loss, shortness of breath, and possibly a grayish color to the skin.</p>
+        <p>Hemochromatosis is a genetic disorder that affects the regulation of iron absorption. The incidence may be as high as 5 in 1000 in Caucasians. Treatment consists of a low-iron diet, no iron supplements, and phlebotomy (blood removal) on a regular basis.</p>
+        <p>Excess storage of iron in the body is known as hemosiderosis. The increased iron stores come from the consumption of excessive iron supplements or from receiving frequent blood transfusions, not from increased iron intake in the diet.</p>
+        <p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002422.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002422.htm</a> and <a href="http://www.cc.nih.gov/ccc/supplements/iron.html">http://www.cc.nih.gov/ccc/supplements/iron.html</a>.</p>
+        <p><b>RDA</b>: 14-18 years old: 15 milligrams/day (no more than 45). 19-30 years old: 18 milligrams/day (no more than 45).</p>        
+
+                  <h4>Iron Food Sources</h4>        
+
+              <p>The best food sources of easily absorbed iron are animal products (heme iron). Iron from vegetables, fruits, grains, and supplements (non-heme iron) is harder for the body to absorb. If you mix some lean meat, fish, or poultry with beans or dark leafy greens at a meal, you can improve absorption of vegetable sources of iron up to three times. Foods rich in vitamin C also increase iron absorption.</p>
+              <p>Some foods decrease iron absorption. Commercial black or pekoe teas contain substances that bind to iron so it cannot be used by the body. The evaluation of absorbable iron in a food is a more accurate way to calculate iron available to the body than by simply recording the total iron content.</p>
+              <p>Iron sources that have high iron availability are oysters, liver, lean red meat (especially beef), poultry, dark red meat, tuna fish, salmon, iron fortified cereals, dried beans, whole grains, eggs (especially egg yolks),
+        dried fruits, dark leafy green vegetables. Reasonable amounts are also found in lamb, pork, and shellfish.</p>        
+
+        <p>Nonheme iron is found in whole grains such as wheat, millet, oats, and brown rice; legumes (lima beans, soybeans, dried beans and peas, kidney beans seeds such as almonds and Brazil nuts); dried fruits (prunes, raisins, and apricots); vegetables (broccoli, spinach, kale, collards, asparagus, dandelion greens).</p>
+        <p>For a list of how much iron selected food sources have, visit <a href="http://www.cc.nih.gov/ccc/supplements/iron.html">http://www.cc.nih.gov/ccc/supplements/iron.html</a> and <a href=
+              "http://www.youngwomenshealth.org/iron.html">http://www.youngwomenshealth.org/iron.html</a>
+        .      For a list of vegan foods with iron, check out the Vegetarian
+              Resource Group's website on nutrition at <a href=
+              "http://www.vrg.org/nutrition/iron.htm">http://www.vrg.org/nutrition/iron.htm</a>.</p>        
+
+          <p>[ <a href="#nutrients__elements">Top of Section</a> ]</p>
+        </div>        
+
+          <div id="nutrients__magnesium">
+            <h3><u>MAGNESIUM</u></h3>
+            <p>Magnesium is a mineral needed by every cell of your body. About half of your body's magnesium stores are found inside cells of body tissues and organs, and half are combined with calcium and phosphorus in bone. Only 1 percent of the magnesium in your body is found in blood. Your body works very hard to keep blood levels of magnesium constant.</p>
+            <p>Magnesium is needed for more than 300 biochemical reactions in the body. It helps maintain normal muscle and nerve function, keeps heart rhythm steady, and bones strong. It is also involved in energy metabolism and protein synthesis.</p>
+            <p>Even though dietary surveys suggest that many Americans do not consume magnesium in recommended amounts, magnesium deficiency is rarely seen in the United States in adults. When magnesium deficiency does occur, it is usually due to excessive loss of magnesium in urine, gastrointestinal system disorders that cause a loss of magnesium or limit magnesium absorption, or a chronically low intake of magnesium. People who abuse alcohol are at high risk for magnesium deficiency because alcohol increases urinary excretion of magnesium.</p>
+            <p>If you think you're not getting enough magnesium, eat more servings of fruit and vegetables, especially dark green leafy vegetables. A healthcare professional could also help you decide whether to take magnesium supplements.</p>
+            <p>Dietary magnesium does not pose a health risk, however very high doses of magnesium supplements, which may be added to laxatives, can promote adverse effects such as diarrhea. Magnesium toxicity is more often associated with kidney failure, when the kidney loses the ability to remove excess magnesium. Very large doses of laxatives also have been associated with magnesium toxicity, even with normal kidney function. igns of excess magnesium can be similar to magnesium deficiency and include mental status changes, nausea, diarrhea, appetite loss, muscle weakness, difficulty breathing, extremely low blood pressure, and irregular heartbeat.</p>
+            <p>For more information, visit <a href="http://www.cc.nih.gov/ccc/supplements/magn.html">http://www.cc.nih.gov/ccc/supplements/magn.html</a>.</p>
+        <p><b>RDA</b>: 14-18 years old: 360 milligrams/day (no more than 350 from any supplements). 19-30 years old: 310 milligrams/day (no more than 350 from any supplements).</p>        
+
+                <p><h4>Magnesium Food Sources</h4></p>        
+
+              <p>Green vegetables such as spinach, nuts, seeds, some whole grains, some water. For a list of how much magnesium selected food sources have, visit <a href="http://www.cc.nih.gov/ccc/supplements/magn.html">http://www.cc.nih.gov/ccc/supplements/magn.html</a>.</p>
+              <p>[ <a href="#nutrients__elements">Top of Section</a> ]</p>
+            </div>        
+
+         <div id="nutrients__manganese">
+           <h3><u>MANGANESE</u></h3>
+           <p>Manganese is an essential trace element and is necessary for good health. The human body typically contains small quantities of manganese, and under normal circumstances, the body controls these amounts so that neither too little nor too much is present. Manganese helps your body break down fats, carbohydrates, and proteins. It does so as part of several enzymes. Under certain conditions, manganese released through several industrial activities can be a health hazard.
+        </p><p>A potential deficiency or toxicity (excess) of manganese in humans appears to be connected to the amount of iron stores in the body, as well as the amount of iron in the diet.
+        </p><p>For more information, visit <a href="http://www.atsdr.cdc.gov/toxprofiles/phs151.html">http://www.atsdr.cdc.gov/toxprofiles/phs151.html</a>, <a href="http://www.nlm.nih.gov/medlineplus/druginfo/uspdi/202618.html">http://www.nlm.nih.gov/medlineplus/druginfo/uspdi/202618.html</a>, <a href="http://risk.lsd.ornl.gov/tox/profiles/mn_ragsa.shtml">http://risk.lsd.ornl.gov/tox/profiles/mn_ragsa.shtml</a> and <a href="http://www.nal.usda.gov/ttic/tektran/data/000008/86/0000088637.html">http://www.nal.usda.gov/ttic/tektran/data/000008/86/0000088637.html</a>.</p>
+        <p><b>RDA</b>: 14-18 years old: 1.6 milligram/day (no more than 9). 19-30 years old: 1.8 milligram/day (no more than 11).</p>
+                <p><h4>Manganese Food Sources</h4></p>        
+
+              <p>Grains, cereals, tea. </p>
+              <p>[ <a href="#nutrients__elements">Top of Section</a> ]</p>
+            </div>        
+
+            <div id="nutrients__molybdenium">
+              <h3><u>MOLYBDENUM</u></h3>
+              <p>The body needs molybdenum (moh-LIB-den-um) for normal growth and health.</p><p>A deficiency of molybdenum is rare. However, if the body does not get enough molybdenum, certain enzymes needed by the body are affected. This may lead to a build up of unwanted substances in some people. Injectable molybdenum is administered only by or under the supervision of your health care professional.</p><p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/druginfo/uspdi/202619.html">http://www.nlm.nih.gov/medlineplus/druginfo/uspdi/202619.html</a> and <a href="http://www.ars.usda.gov/is/qtr/q400/hn400.htm">http://www.ars.usda.gov/is/qtr/q400/hn400.htm</a>.</p><p><b>RDA</b>: 14-18 years old: 43 micrograms/day (no more than 1700). 19-30 years old: 45 micrograms/day (no more than 2000).</p>        
+        
+
+          <p><h4>Molybdenum Food Sources</h4></p>       
+
+              <p>Most Americans get enough molybdenum because a variety of foods provide it, including pumpkin and sunflower seeds, peas, beans, peanuts and other legumes, and grain-based products such as breakfast cereals or whole-grain breads.
+        </p>        
+
+         <p>[ <a href="#nutrients__elements">Top of Section</a> ]</p>       
+
+        </div>        
+
+         <div id="nutrients__phosphorus">
+           <h3><u>PHOSPHORUS</u></h3>
+           <p>Phosphorus is a mineral that makes up 1% of the total body weight. It is present in every cell of the body, but 85% of the body's phosphorus is found in the bones and teeth.</p><p>The main function of phosphorus is in the formation of the bones and teeth. It plays an important role in the body's utilization of carbohydrates and fats, and in the synthesis of protein for the growth, maintenance, and repair of cells and tissues.</p><p>Phosphorus works with the B vitamins in their functions in the body. It also assists in the contraction of muscles, in the functioning of kidneys, in maintaining the regularity of the heartbeat, and in nerve conduction.</p><p>There is no known deficiency of phosphorus because it is so available in the food supply. Excessively high levels of phosphorus in the blood, although rare, can combine with calcium and deposit in soft tissues like muscle. These high levels of phosphorus in blood only occur in people with severe kidney disease or severe dysfunction of their calcium regulation. </p><p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002424.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002424.htm</a>. </p><p><b>RDA</b>: 14-18 years old: 1250 milligrams/day (no more than 4000). 19-30 years old: 700 milligrams/day (no more than 4000).</p>        
+        
+
+          <p><h4>Phosphorus Food Sources</h4></p>       
+
+              <p>The main food sources are the protein food groups of meat and milk. A meal plan that provides adequate amounts of calcium and protein also provides an adequate amount of phosphorus.
+        </p>        
+
+          <p>[ <a href="#nutrients__elements">Top of Section</a> ]</p>
+        </div>        
+
+          <div id="nutrients__selenium">
+            <h3><u>SELENIUM</u></h3>
+            <p>Selenium is an essential trace mineral in the human body. This nutrient is an important part of antioxidant enzymes that protect cells against the effects of free radicals that are produced during normal oxygen metabolism. The body has developed defenses such as antioxidants to control levels of free radicals because they can damage cells and contribute to the development of some chronic diseases. Selenium is also essential for normal functioning of the immune system and thyroid gland.</p><p>There is a moderate to high health risk of too much selenium. High blood levels of selenium can result in a condition called selenosis. Symptoms include gastrointestinal upsets, hair loss, white blotchy nails, and mild nerve damage. Selenium toxicity is rare in the United States and the few reported cases have been associated with industrial accidents and a manufacturing error that led to an excessively high dose of selenium in a supplement. The upper limit of selenium that most adults can ingest safely is 400 micrograms/day.</p><p>For more information, visit <a href="http://www.cc.nih.gov/ccc/supplements/selen.html">http://www.cc.nih.gov/ccc/supplements/selen.html</a>.</p><p><b>RDA</b>: 14-18 years old: 55 micrograms/day (no more than 400). 19-30 years old: 55 micrograms/day (no more than 400).</p>        
+
+                <p><h4>Selenium Food Sources</h4></p>       
+
+              <p>Plant foods, some meats, seafood, bread, some nuts (in particular Brazil nuts and walnuts). For a list of how much selenium slsected food sources have, visit <a href="http://www.cc.nih.gov/ccc/supplements/selen.html">http://www.cc.nih.gov/ccc/supplements/selen.html</a>.       
+
+        </p>        
+
+         <p>[ <a href="#nutrients__elements">Top of Section</a> ]</p>
+         </div>       
+
+         <div id="nutrients__zinc">
+           <h3><u>ZINC</u></h3>
+           <p>Zinc is an essential mineral that is found in almost every cell. It stimulates the activity of approximately 100 enzymes, which are substances that promote biochemical reactions in your body. Zinc supports a healthy immune system, is needed for wound healing, helps maintain your sense of taste and smell, and is needed for DNA synthesis. Zinc also supports normal growth and development during pregnancy, childhood, and adolescence.</p>
+           <p>Zinc deficiency most often occurs when zinc intake is inadequate or poorly absorbed, when there are increased losses of zinc from the body, or when the body's requirement for zinc increases. Signs of zinc deficiency include growth retardation, hair loss, diarrhea, delayed sexual maturation and impotence, eye and skin lesions, and loss of appetite. There is also evidence that weight loss, delayed healing of wounds, taste abnormalities, and mental lethargy can occur. Since many of these symptoms are general and are associated with other medical conditions, do not assume they are due to a zinc deficiency. It is important to consult with a healthcare professional about medical symptoms so that appropriate care can be given.</p>
+           <p>Zinc toxicity has been seen in both acute and chronic forms. Intakes of 150 to 450 mg of zinc per day have been associated with low copper status, altered iron function, reduced immune function, and reduced levels of high-density lipoproteins (HDL, the good cholesterol). One case report cited severe nausea and vomiting within 30 minutes after the person ingested four grams of zinc gluconate (570 mg elemental zinc). ULs are the highest intake associated with no adverse effects, and are listed below (in the paragraph beginning "RDA:").</p>
+        <p>For more information, visit <a href="http://www.cc.nih.gov/ccc/supplements/zinc.html">http://www.cc.nih.gov/ccc/supplements/zinc.html</a>.</p>
+        <p><b>RDA</b>: 14-18 years old: 9 milligrams/day (no more than 34). 19-30 years old: 8 milligrams/day (no more than 40). <b>NOTE: Zinc RDA's may be 50% higher for vegetarians than for non-vegetarians; check with a health care professional.</b></p>       
+        
+
+          <p><h4>Zinc Food Sources</h4></p>       
+
+         <p>Oysters contain more zinc per serving than any other food, but red meat and poultry provide the majority of zinc in the American diet. Other good food sources include beans, nuts, certain seafood, whole grains, fortified breakfast cereals, and dairy products. Zinc absorption is greater from a diet high in animal protein than a diet rich in plant proteins. Phytates, which are found in whole grain breads, cereals, legumes and other products, can decrease zinc absorption. For a list of how much zinc selected food sources have, visit <a href="http://www.cc.nih.gov/ccc/supplements/zinc.html">http://www.cc.nih.gov/ccc/supplements/zinc.html</a>. </p>
+         <p>[ <a href="#nutrients__elements">Top of Section</a> ]</p>
+         <br>[ <a href="#nutrients__top">Top of Page</a> ]
+        </div>        
+
+          <div id="nutrients__macro">
+           <h2>Macronutrients</h2>
+           <b><u><a href="#nutrients__carbs">Carbohydrates</a><br>
+              <a href="#nutrients__fiber">Fiber</a><br>
+              <a href="#nutrients__fat">Fat</a><br>
+              <a href="#nutrients__protein">Protein and Amino Acids</a></u></b>
+          </div>        
+
+          <div id="nutrients__carbs">
+            <h3><u>CARBOHYDRATES</u></h3>
+            <p>Carbohydrates are a large group of sugars, starches, celluloses, and gums that contain carbon, hydrogen, and oxygen in similar proportions. The primary function of carbohydrates is to provide energy for the body, especially the brain and the nervous system. The body breaks down starches and sugars into a substance called glucose, which is used for energy by the body.</p><p>It is recommended that somewhere between 40 to 60% of our total calories come from carbohydrates, preferably from complex carbohydrates (starches) and naturally occurring sugars rather than processed or refined sugars. High-sugar foods are simple carbohydrates that provide calories, but minimal nutritional benefits. On the other hand, complex carbohydrates provide calories, vitamins and minerals as well as fiber. To increase complex carbohydrates:
+              <ul><li>Eat more fruits and vegetables.</li>
+                <li>Eat more whole grains, rice, breads and cereals.</li>
+                <li>Eat more beans, lentils, and dried peas.</li></ul></p>
+            <p>Excessive carbohydrates can cause an increase in the total caloric intake, causing obesity. Deficient carbohydrates can cause a lack of calories (malnutrition), or excessive intake of fats to make up the calories. </p><p>Fore more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002469.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002469.htm</a>.</p><p><b>RDA</b>: 14-18 years old: 130 grams/day. 19-30 years old: 130 grams/day.</p><p><b>Carbohydrate Food Sources</b></p><p>Complex carbohydrates are a good source of minerals, vitamins, and fiber. They are starches found in breads, cereals, starchy vegetables, legumes, rice, and pastas. Simple carbohydrates also contain vitamins and minerals. They naturally occur in fruits, milk and milk products, and vegetables. Simple carbohydrates are also found in processed and refined sugars such as candy, table sugar, syrups (not including natural syrups such as maple), and soda. Refined sugars provide calories, but lack vitamins, minerals, and fiber.  </p>
+            <p>[ <a href="#nutrients__macro">Top of Section</a> ]</p>
+          </div>        
+
+            <div id="nutrients__fiber">
+              <h3><u>FIBER</u></h3>
+              <p>Dietary fiber is found in plant foods. Fiber cannot be digested by humans. It has no calories because the body cannot absorb it.</p><p>Dietary fiber provides a feeling of fullness and adds bulk in the diet. This assists digestion and elimination.</p><p>Including fiber in your daily diet helps prevent many problems and brings many benefits. It may be helpful in controlling weight by making you feel full sooner. It helps prevent constipation. It may be helpful in the prevention or treatment of diverticulosis, diabetes, and heart disease (ask your health care professional or campus dietician about recommendations for these conditions).</p><p>Eating a large amount of fiber in a short period of time can cause intestinal gas (flatulence), bloating, and abdominal cramps. This subsides once the natural bacteria in the digestive system get used to the increase in fiber in the diet. The problem with gas or diarrhea can be reduced considerably by adding fiber gradually to the diet.
+              </p><p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002470.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002470.htm</a>. </p><p><b>RDA</b>: 14-18 years old: 26 grams/day. 19-30 years old: 25 grams/day.</p><p><b>Fiber Food Sources</b></p><p>There are two forms of fiber: soluble and insoluble. Soluble fiber attracts water and turns to gel during digestion. This slows digestion and the rate of nutrient absorption from the stomach and intestine. It is found in oat bran, barley, nuts, seeds, beans, lentils, peas, and some fruits and vegetables. Insoluble fiber is found in foods such as wheat bran, vegetables and whole grains. It appears to speed the passage of foods through the stomach and intestines and adds bulk to the stool.</p><p> Water helps the passage of fiber through the digestive system. Drink plenty of fluids (approximately 8 glasses of water or noncaloric fluid a day).</p>
+              <p>[ <a href="#nutrients__macro">Top of Section</a> ]</p>
+            </div>        
+
+          <div id="nutrients__fat">
+            <h3><u>FAT</u></h3>
+            <p>Fats are organic compounds that are made up of carbon, hydrogen, and oxygen; they are the most concentrated source of energy in foods. Fats belong to a group of substances called lipids. Fats come in liquid or solid form. All fats are combinations of saturated and unsaturated fatty acids. Fats can be called very saturated or very unsaturated depending on their proportions.</p><p>Fat is essential for the proper functioning of the body. Fats provide the "essential" fatty acids, which are not made by the body and must be obtained from food. Linoleic acid is the most important essential fatty acid, especially for the growth and development of infants. Fatty acids provide the raw materials that help in the control of blood pressure, blood clotting, inflammation, and other body functions. Omega-3 (n-3) fatty acids are important for heart health and can be supplied by eating fish twice a week, or seaweed, tofu, soybeans, canola oil, walnut oil, and flaxseed oil.</p><p>
+        Fat serves as the storage substance for the body's extra calories. It fills the fat cells (adipose tissue) that help insulate the body. Fats are also an important energy source. When the body has used up the calories from carbohydrate, which occurs after the first 20 minutes of exercise, it begins to depend on the calories from fat.</p><p>
+        Healthy skin and hair are maintained by fat. Fat helps in the absorption, and transport through the bloodstream of the fat-soluble vitamins A, D, E, and K.</p><p>Eating too much saturated fat is one of the major risk factors for heart disease. A diet high in saturated fat causes a soft, waxy substance called cholesterol to build up in the arteries. Too much fat also increases the risk of heart disease because of its high calorie content, which increases the chance of becoming obese (another risk factor for heart disease and some types of cancer).</p><p>       
+
+        A large intake of polyunsaturated fat may increase the risk for some types of cancer. Reducing daily fat intake is not a guarantee against developing cancer or heart disease, but it does help reduce the risk factors.</p><p>It is recommended that everyone over 20 have their cholesterol checked. Talk to your health care provider about how to cut down on your fat intake and to have your cholesterol checked.
+         </p><p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002468.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002468.htm</a>.</p><p>n-6 Polyunsaturated Fatty Acids <b>RDA</b>: 14-18 years old: 11 grams/day. 19-30 years old: 17 grams/day.</p><p>n-3 Polyunsaturated Fatty Acids <b>RDA</b>: 14-18 years old: 1.1 grams/day. 19-30 years old: 1.1 grams/day.</p><p><b>Food Sources</b><ul>
+              <li>
+                <strong>Saturated fats:</strong> These are the biggest dietary cause of high LDL levels ("bad cholesterol"). When looking at a food label, pay very close attention to the % of saturated fat and avoid or limit any foods that are high (for example, over 20% saturated fat). Saturated fats are found in animal products such as butter, cheese, whole milk, ice cream, cream, and fatty meats. They are also found in some vegetable oils -- coconut, palm, and palm kernel oils. (Note: most other vegetable oils contain unsaturated fat and are healthy.)</li>
+              <li>
+                <strong>Unsaturated fats:</strong> Fats that help to lower blood cholesterol if used in place of saturated fats. However, unsaturated fats have a lot of calories, so you still need to limit them. There are two types: mono-unsaturated and polyunsaturated. Most (but not all!) liquid vegetable oils are unsaturated. (The exceptions include coconut, palm, and palm kernel oils.)</li>
+              <li>
+                <strong>Mono-unsaturated fats:</strong> Fats that help to lower blood cholesterol if used in place of saturated fats. However, mono-unsaturated fats have a lot of calories, so you still need to limit them. Examples include olive and canola oils.</li>
+              <li>
+                <strong>Polyunsaturated fats:</strong> Fats that help to lower blood cholesterol if used in place of saturated fats. However, polyunsaturated fats have a lot of calories, so you still need to limit them. Examples include safflower, sunflower, corn, and soybean oils.</li>
+              <li>
+                <strong>Trans fatty acids:</strong> These fats form when vegetable oil hardens (a process called hydrogenation) and can raise LDL levels. They can also lower HDL levels ("good cholesterol"). Trans-fatty acids are found in fried foods, commercial baked goods (donuts, cookies, crackers), processed foods, and margarines.</li>
+              <li>
+                <strong>Hydrogenated:</strong> refers to oils that have become hardened (such as hard butter and margarine). Foods made with hydrogenated oils should be avoided because they contain high levels of trans fatty acids, which are linked to heart disease. (Look at the ingredients in the food label.) The terms "hydrogenated" and "saturated" are related; an oil becomes saturated when hydrogen is added (i.e., becomes hydrogenated).</li>
+              <li>
+                <strong>Partially hydrogenated:</strong> Refers to oils that have become partially hardened. Foods made with partially hydrogenated oils should be avoided because they contain high levels of trans fatty acids, which are linked to heart disease. (Look at the ingredients in the food label.)</li>
+            </ul></p>       
+
+            <p>[ <a href="#nutrients__macro">Top of Section</a> ]</p>
+          </div>        
+
+          <div id="nutrients__protein">
+            <h3><u>PROTEIN AND AMINO ACIDS</u></h3>
+            <p>
+        Proteins are complex organic compounds. The basic structure of protein is a chain of amino acids that contain carbon, hydrogen, oxygen, and nitrogen. The presence of nitrogen differentiates protein from carbohydrate and fat.</p><p>Protein is the main component of muscles, organs, and glands. Every living cell and all body fluids, except bile and urine, contain protein. The cells of muscles, tendons, and ligaments are maintained with protein. Children and adolescents require protein for growth and development.</p><p>Proteins are described as essential and nonessential proteins or amino acids. The human body requires approximately 20 amino acids for the synthesis of its proteins.</p><p>The body can make only 13 of the amino acids -- these are known as the nonessential amino acids. They are called non-essential because the body can make them and does not need to get them from the diet. There are 9 essential amino acids that are obtained only from food, and not made in the body.</p><p>If the protein in a food supplies enough of the essential amino acids, it is called a complete protein. If the protein of a food does not supply all the essential amino acids, it is called an incomplete protein.</p>
+        <p><table border=1 cellpadding=3 cellspacing=3>
+            <tr><td><b> Essential Amino Acid</b></td>
+                <td><b>RDA<br>(Mg/g protein)</b></td></tr>
+            <tr><td>Histidine</td>
+                <td>18</td></tr>
+            <tr><td>Isoleucine</td>
+                <td>25</td></tr>
+            <tr><td>Lysine</td>
+                <td>55</td></tr>
+            <tr><td>Leucine</td>
+                <td>51</td></tr>
+            <tr><td>Methionine & Cysteine</td>
+                <td>25</td></tr>
+            <tr><td>Phenylalanine & Tyrosine</td>
+                <td>47</td></tr>
+            <tr><td>Threonine</td>
+                <td>27</td></tr>
+            <tr><td>Tryptophan</td>
+                <td>7</td></tr>
+            <tr><td>Valine</td>
+                <td>32</td></tr></table></p>        
+
+        <p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002467.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002467.htm</a>.</p>
+        <p><b>RDA</b>: 14-18 years old: 46 grams/day. 19-30 years old: 46 grams/day.</p>
+        <p><b>Food Sources</b>
+        <ul>
+        <li>All meat and other <b>animal products</b> are sources of complete proteins. These include beef, lamb, pork, poultry, fish, shellfish, eggs, milk, and milk products.</li>
+        <li>Protein in foods (such as grains, fruits, and vegetables) are either low, incomplete protein or lack one of the essential amino acids. These food sources are considered incomplete proteins.</li>
+        <li><b>Plant proteins</b> can be combined to include all of the essential amino acids and form a complete protein. Examples of combined, complete plant proteins are rice and beans, milk and wheat cereal, and corn and beans.
+        <b><a href="{{pathFor 'vegetarianism'}}">Vegetarians</a></b> are able to get enough protein if they eat the proper combination of plant proteins.</li></ul></p>       
+
+          <p></p><p>A diet high in meat could lead to high cholesterol or other diseases, such as gout. Another potential problem is that a high-protein diet may put a strain on the kidneys. Extra waste matter, which is the end product of protein metabolism, is excreted in the urine.</p>
+
+
+              </div>
+              </div>
+               <div class="tab-pane" id="tab_nutrients_5">
+              <div class="box">
+              <p>The Boston Women's Health Book Collective, <u>Our Bodies, Ourselves</u> (New York: Simon & Schuster, 1998), 52, 55.</p>
+              <p>4woman.gov, <a href="http://www.4woman.gov/bodyimage/index.htm">Women's Body Image and Health</a></p>
+              <p>The Food and Drug Administration, <a href=
+                "http://www.cfsan.fda.gov/~dms/wh-nutr.html">Women and Nutrition</a></p>          
+
+                <p></p>         
+
+              <p></p>             
+
+              <p>Department of Health and Human Services, <a href="http://www.health.gov/dietaryguidelines">Nutrition and Your Health: Dietary Guidelines for Americans</a></p>             
+
+              <p>Food and Nutrition Board, RDIs (<a href="http://www.adobe.com/products/acrobat/readstep2.html">PDF</a> format): <a href="http://www4.nationalacademies.org/iom/iomhome.nsf/WFiles/Webtableminerals/$file/Webtableminerals.pdf">Elements</a> / <a href="http://www4.nationalacademies.org/iom/iomhome.nsf/WFiles/webtablevitamins/$file/webtablevitamins.pdf">Vitamins</a> / <a href="http://www.iom.edu/iom/iomhome.nsf/WFiles/FNBMacronutrientTable/$file/FNBMacronutrientTable.pdf">Macronutrients</a> and more on <a href="http://www4.nationalacademies.org/news.nsf/isbn/0309085373?OpenDocument">Macronutrients</a></p>              
+
+              <p></p>
+                           
+
+              <div>
+              <div id="ftn1">
+                <p><a href="nutrients.html#_ftnref1" name="_ftn1" title=""></a>1<a href="http://www.pueblo.gsa.gov/cic_text/food/food-pyramid/main.htm">http://www.pueblo.gsa.gov/cic_text/food/food-pyramid/main.htm</a>, <a href="http://home.caregroup.org/clinical/altmed/interactions/Drug_Classes/Oral_Contracept.htm">http://home.caregroup.org/clinical/altmed/interactions/Drug_Classes/Oral_Contracept.htm</a></p></div>              
+
+              <div id="ftn2">
+                <p><a href="nutrients.html#_ftnref2" name="_ftn2" title=""></a>2 The Boston Women's Health Book Collective,  <u>Our Bodies, Ourselves</u> (New York: Simon & Schuster, 1998) 52; Merck Manual, <a href="http://www.merck.com/pubs/mmanual/section18/chapter246/246b.htm">"Contraception"</a>;
+              <a href="http://www.health.gov/dietaryguidelines/dga2000/document/build.htm">http://www.health.gov/dietaryguidelines/dga2000/document/build.htm</a>, <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002422.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002422.htm</a></p></div>              
+
+              <div id="ftn3">
+                <p><a href="nutrients.html#_ftnref3" name="_ftn3" title=""></a>3 <a href="http://www.nia.nih.gov/health/agepages/supplements.htm">http://www.nia.nih.gov/health/agepages/supplements.htm</a></p></div>              
+
+              <div id="ftn4">
+                <p><a href="nutrients.html#_ftnref4" name="_ftn4" title=""></a>4 Food & Nutrition Information Center, <a href="http://www.nal.usda.gov/fnic/etext/000105.html">DRI/RDA</a>; USDA Food and
+                Nutrition Board, <a href="http://www4.nas.edu/IOM/IOMhome.nsf/pages/FNB+FAQ+DRI">Frequently Asked Questions about
+                the DRIs</a></p>
+                </div>
+
+              </div>
+              </div>
+
+            </div>
+
+            </div>
+            </div>
+
+          </div>
+        </div>
+</template>
+
+<!--
+<template name="nutrients">
   <div id='nutrients__top'>
     <h1 style="font-size:24pt;text-align:center">
       Nutrients
@@ -383,7 +1059,7 @@ Drinking water with higher than normal levels of copper may cause vomiting, diar
 <p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002420.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002420.htm</a>.</p>
 <p><b>RDA</b>: 14-18 years old: 3 milligrams/day (no more than 10). 19-30 years old: 3 milligrams/day (no more than 10).</p>
 
-      	<p><h4>Fluoride Food Sources</h4></p>
+        <p><h4>Fluoride Food Sources</h4></p>
 
       <p>Fluoridated water, seafood, tea, gelatin. </p>
 
@@ -450,7 +1126,7 @@ dried fruits, dark leafy green vegetables. Reasonable amounts are also found in 
     <p>For more information, visit <a href="http://www.cc.nih.gov/ccc/supplements/magn.html">http://www.cc.nih.gov/ccc/supplements/magn.html</a>.</p>
 <p><b>RDA</b>: 14-18 years old: 360 milligrams/day (no more than 350 from any supplements). 19-30 years old: 310 milligrams/day (no more than 350 from any supplements).</p>
 
-      	<p><h4>Magnesium Food Sources</h4></p>
+        <p><h4>Magnesium Food Sources</h4></p>
 
       <p>Green vegetables such as spinach, nuts, seeds, some whole grains, some water. For a list of how much magnesium selected food sources have, visit <a href="http://www.cc.nih.gov/ccc/supplements/magn.html">http://www.cc.nih.gov/ccc/supplements/magn.html</a>.</p>
       <p>[ <a href="#nutrients__elements">Top of Section</a> ]</p>
@@ -462,7 +1138,7 @@ dried fruits, dark leafy green vegetables. Reasonable amounts are also found in 
 </p><p>A potential deficiency or toxicity (excess) of manganese in humans appears to be connected to the amount of iron stores in the body, as well as the amount of iron in the diet.
 </p><p>For more information, visit <a href="http://www.atsdr.cdc.gov/toxprofiles/phs151.html">http://www.atsdr.cdc.gov/toxprofiles/phs151.html</a>, <a href="http://www.nlm.nih.gov/medlineplus/druginfo/uspdi/202618.html">http://www.nlm.nih.gov/medlineplus/druginfo/uspdi/202618.html</a>, <a href="http://risk.lsd.ornl.gov/tox/profiles/mn_ragsa.shtml">http://risk.lsd.ornl.gov/tox/profiles/mn_ragsa.shtml</a> and <a href="http://www.nal.usda.gov/ttic/tektran/data/000008/86/0000088637.html">http://www.nal.usda.gov/ttic/tektran/data/000008/86/0000088637.html</a>.</p>
 <p><b>RDA</b>: 14-18 years old: 1.6 milligram/day (no more than 9). 19-30 years old: 1.8 milligram/day (no more than 11).</p>
-      	<p><h4>Manganese Food Sources</h4></p>
+        <p><h4>Manganese Food Sources</h4></p>
 
       <p>Grains, cereals, tea. </p>
       <p>[ <a href="#nutrients__elements">Top of Section</a> ]</p>
@@ -473,7 +1149,7 @@ dried fruits, dark leafy green vegetables. Reasonable amounts are also found in 
       <p>The body needs molybdenum (moh-LIB-den-um) for normal growth and health.</p><p>A deficiency of molybdenum is rare. However, if the body does not get enough molybdenum, certain enzymes needed by the body are affected. This may lead to a build up of unwanted substances in some people. Injectable molybdenum is administered only by or under the supervision of your health care professional.</p><p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/druginfo/uspdi/202619.html">http://www.nlm.nih.gov/medlineplus/druginfo/uspdi/202619.html</a> and <a href="http://www.ars.usda.gov/is/qtr/q400/hn400.htm">http://www.ars.usda.gov/is/qtr/q400/hn400.htm</a>.</p><p><b>RDA</b>: 14-18 years old: 43 micrograms/day (no more than 1700). 19-30 years old: 45 micrograms/day (no more than 2000).</p>
 
 
-	<p><h4>Molybdenum Food Sources</h4></p>
+  <p><h4>Molybdenum Food Sources</h4></p>
 
       <p>Most Americans get enough molybdenum because a variety of foods provide it, including pumpkin and sunflower seeds, peas, beans, peanuts and other legumes, and grain-based products such as breakfast cereals or whole-grain breads.
 </p>
@@ -487,7 +1163,7 @@ dried fruits, dark leafy green vegetables. Reasonable amounts are also found in 
    <p>Phosphorus is a mineral that makes up 1% of the total body weight. It is present in every cell of the body, but 85% of the body's phosphorus is found in the bones and teeth.</p><p>The main function of phosphorus is in the formation of the bones and teeth. It plays an important role in the body's utilization of carbohydrates and fats, and in the synthesis of protein for the growth, maintenance, and repair of cells and tissues.</p><p>Phosphorus works with the B vitamins in their functions in the body. It also assists in the contraction of muscles, in the functioning of kidneys, in maintaining the regularity of the heartbeat, and in nerve conduction.</p><p>There is no known deficiency of phosphorus because it is so available in the food supply. Excessively high levels of phosphorus in the blood, although rare, can combine with calcium and deposit in soft tissues like muscle. These high levels of phosphorus in blood only occur in people with severe kidney disease or severe dysfunction of their calcium regulation. </p><p>For more information, visit <a href="http://www.nlm.nih.gov/medlineplus/ency/article/002424.htm">http://www.nlm.nih.gov/medlineplus/ency/article/002424.htm</a>. </p><p><b>RDA</b>: 14-18 years old: 1250 milligrams/day (no more than 4000). 19-30 years old: 700 milligrams/day (no more than 4000).</p>
 
 
-	<p><h4>Phosphorus Food Sources</h4></p>
+  <p><h4>Phosphorus Food Sources</h4></p>
 
       <p>The main food sources are the protein food groups of meat and milk. A meal plan that provides adequate amounts of calcium and protein also provides an adequate amount of phosphorus.
 </p>
@@ -499,7 +1175,7 @@ dried fruits, dark leafy green vegetables. Reasonable amounts are also found in 
     <h3><u>SELENIUM</u></h3>
     <p>Selenium is an essential trace mineral in the human body. This nutrient is an important part of antioxidant enzymes that protect cells against the effects of free radicals that are produced during normal oxygen metabolism. The body has developed defenses such as antioxidants to control levels of free radicals because they can damage cells and contribute to the development of some chronic diseases. Selenium is also essential for normal functioning of the immune system and thyroid gland.</p><p>There is a moderate to high health risk of too much selenium. High blood levels of selenium can result in a condition called selenosis. Symptoms include gastrointestinal upsets, hair loss, white blotchy nails, and mild nerve damage. Selenium toxicity is rare in the United States and the few reported cases have been associated with industrial accidents and a manufacturing error that led to an excessively high dose of selenium in a supplement. The upper limit of selenium that most adults can ingest safely is 400 micrograms/day.</p><p>For more information, visit <a href="http://www.cc.nih.gov/ccc/supplements/selen.html">http://www.cc.nih.gov/ccc/supplements/selen.html</a>.</p><p><b>RDA</b>: 14-18 years old: 55 micrograms/day (no more than 400). 19-30 years old: 55 micrograms/day (no more than 400).</p>
 
-      	<p><h4>Selenium Food Sources</h4></p>
+        <p><h4>Selenium Food Sources</h4></p>
 
       <p>Plant foods, some meats, seafood, bread, some nuts (in particular Brazil nuts and walnuts). For a list of how much selenium slsected food sources have, visit <a href="http://www.cc.nih.gov/ccc/supplements/selen.html">http://www.cc.nih.gov/ccc/supplements/selen.html</a>.
 
@@ -517,7 +1193,7 @@ dried fruits, dark leafy green vegetables. Reasonable amounts are also found in 
 <p><b>RDA</b>: 14-18 years old: 9 milligrams/day (no more than 34). 19-30 years old: 8 milligrams/day (no more than 40). <b>NOTE: Zinc RDA's may be 50% higher for vegetarians than for non-vegetarians; check with a health care professional.</b></p>
 
 
-	<p><h4>Zinc Food Sources</h4></p>
+  <p><h4>Zinc Food Sources</h4></p>
 
  <p>Oysters contain more zinc per serving than any other food, but red meat and poultry provide the majority of zinc in the American diet. Other good food sources include beans, nuts, certain seafood, whole grains, fortified breakfast cereals, and dairy products. Zinc absorption is greater from a diet high in animal protein than a diet rich in plant proteins. Phytates, which are found in whole grain breads, cereals, legumes and other products, can decrease zinc absorption. For a list of how much zinc selected food sources have, visit <a href="http://www.cc.nih.gov/ccc/supplements/zinc.html">http://www.cc.nih.gov/ccc/supplements/zinc.html</a>. </p>
  <p>[ <a href="#nutrients__elements">Top of Section</a> ]</p>
@@ -658,3 +1334,4 @@ Proteins are complex organic compounds. The basic structure of protein is a chai
 [ <a href="#nutrients__top">To Top</a> ]
               </div>
 </template>
+-->
