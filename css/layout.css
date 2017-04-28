@@ -34,6 +34,12 @@ body {background-color:#582c83}
     border-bottom: purple 3px solid;
 
 }
+#about{
+  border-bottom: 3px solid transparent;
+}
+#about:hover{
+    border-bottom: purple 3px solid;
+}
 #legal{
   border-bottom: 3px solid transparent;
 }
